@@ -7,12 +7,25 @@ html {
 }
 
 body {
-	position: relative;
 	background: #FF474A;
+	position: relative;
 	padding: 10% 0 2em;
 	margin: 0;
 	font-family: 'Open Sans Condensed', sans-serif;
 	color: #FFFFFF;
+}
+
+body:after {
+	content: "";
+	opacity: 0.25;
+	background: url('/assets/images/map.svg') top center no-repeat #FF474A fixed;
+	background-size: cover;
+	position: fixed;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
 }
 
 .clearfix:after {
