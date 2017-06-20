@@ -1,0 +1,153 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	position: relative;
+	background: #FF474A;
+	padding: 10% 0 2em;
+	margin: 0;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #FFFFFF;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+h1 {
+	display: block;
+	color: #37373E;
+	text-transform: uppercase;
+	line-height: 1em;
+	margin: 0;
+	padding: 0;
+}
+
+h1 span {
+	background: #37373E;
+	color: #FF474A;
+	display: inline-block;
+	padding: 0 10px;
+	margin: 0 2px 0 0;
+	border-radius: 5px;
+}
+
+.btn {
+	background: #ffffff;
+	display: block;
+	text-align: center;
+	padding: 10px 0;
+	margin: 0 auto;
+	text-decoration: none;
+	color: #FF474A;
+	transition: all 0.2s ease-out;
+	max-width: 300px;
+}
+
+.btn:hover {
+	background: #37373E;
+}
+
+.wrapper {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 2em;
+	text-align: center;
+}
+
+.col {
+	padding-left: 2em;
+}
+
+.logo {
+	max-width: 300px;
+	margin: 0 auto 2em;
+}
+
+.logo img {
+	max-width: 100%;
+	display: block;
+}
+
+p {
+	letter-spacing: 0.5px;
+}
+
+@media all and (min-width: 600px) {
+	.wrapper {
+		display: table;
+		width: 100%;
+	}
+	.btn {
+		max-width: 200px;
+		margin: 0;
+	}
+	.logo {
+		/*float: left;*/
+		display: table-cell;
+		/*width: 25%;*/
+		display: block;
+		max-width: none;
+		padding-right: 2em;
+		vertical-align: middle;
+		text-align: right;
+	}
+	.logo img {
+		max-width: 300px;
+		min-width: 250px;
+		margin: 0;
+		display: inline-block;
+		/*margin-left: auto;*/
+	}
+	.col {
+		/*float: left;*/
+		text-align: left;
+		display: table-cell;
+		/*width: 75%;*/
+		vertical-align: middle;
+	}
+}
+
+@media all and (min-width: 768px) {
+	.logo, .col {
+		width: 50%;
+	}
+}
+
+.links {
+	list-style: none;
+	padding: 0;
+	margin: 1em 0;
+}
+
+.links li {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.links li:last-child {
+	margin-right: 0;
+}
+
+.links a {
+	display: block;
+	color: #FFF;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 1.5em;
+	transition: color 0.2s ease-out;
+}
+
+.links a:hover {
+	color: #EEE;
+}
