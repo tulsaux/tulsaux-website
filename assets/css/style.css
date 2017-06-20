@@ -78,12 +78,8 @@ h1 span {
 	text-align: center;
 }
 
-.col {
-	padding-left: 2em;
-}
-
 .logo {
-	max-width: 300px;
+	max-width: 50%;
 	margin: 0 auto 2em;
 }
 
@@ -124,6 +120,7 @@ p {
 	}
 	.col {
 		/*float: left;*/
+		padding-left: 2em;
 		text-align: left;
 		display: table-cell;
 		/*width: 75%;*/
