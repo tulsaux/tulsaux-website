@@ -86,7 +86,7 @@ $fontColor: $blackLighter !default;
 $altColor: $gray !default;
 // Link Palettes
 // -------------------------
-$linkColor: #06f !default;
+$linkColor: $clr-1 !default;
 $linkHover: darken($linkColor, 10%) !default;
 $linkVisited: darken($linkHover, 5%) !default;
 $linkFocus: $linkHover !default;

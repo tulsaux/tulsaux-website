@@ -912,12 +912,14 @@ footer {
   color: #737373;
   font-family: "News Cycle", "Helvetica Neue", Arial, Helvetica, sans-serif; }
 
+.c-footer__wrapper {
+  padding: 0; }
+
 .c-footer__social {
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: center;
-  max-width: 180px;
   margin: 0 auto;
   display: block; }
   @media screen and (min-width: 400px) {
@@ -927,20 +929,14 @@ footer {
     .c-footer__social {
       text-align: left; } }
   .c-footer__social li {
-    display: block;
-    width: 33.333%;
-    float: left;
-    text-align: center;
-    padding: 0 0 1em; }
-    @media screen and (min-width: 400px) {
-      .c-footer__social li {
-        float: none;
-        width: auto;
-        display: inline-block;
-        padding: 0 1em 0 0; } }
+    display: inline-block;
+    padding: 0 1em 0 0; }
   .c-footer__social a {
     color: #fff;
-    font-size: 2em; }
+    font-size: 1.5em; }
+    @media screen and (min-width: 400px) {
+      .c-footer__social a {
+        font-size: 2em; } }
 
 .c-footer__copyright {
   margin-top: 1em;
