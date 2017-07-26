@@ -12,7 +12,7 @@
  */
 /* Document
    ========================================================================== */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+@import url("https://fonts.googleapis.com/css?family=News+Cycle:400,700");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 html {
   font-family: sans-serif;
@@ -426,194 +426,63 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #FF474A;
+  background: #333;
   position: relative;
-  padding: 10% 0 2em;
+  padding: 0;
   margin: 0;
-  font-family: "Open Sans Condensed", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: "News Cycle", "Helvetica Neue", Arial, Helvetica, sans-serif;
   color: #FFFFFF; }
 
-body:after {
-  content: "";
-  opacity: 0.5;
-  background: url("../images/map.svg") top center no-repeat #FF474A fixed;
-  background-size: cover;
-  position: fixed;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0; }
-
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0; }
-
-h1 {
-  display: block;
-  color: #37373E;
-  text-transform: uppercase;
-  line-height: 1em;
-  margin: 0;
-  padding: 0; }
-
-h1 span {
-  background: #37373E;
-  color: #FF474A;
-  display: inline-block;
-  padding: 0 10px;
-  margin: 0 2px 0 0;
-  border-radius: 5px; }
-
-.btn {
-  background: #ffffff;
-  display: block;
-  text-align: center;
-  padding: 10px 0;
-  margin: 0 auto;
-  text-decoration: none;
-  color: #FF474A;
-  transition: all 0.2s ease-out;
-  max-width: 300px; }
-
-.btn:hover {
-  background: #37373E; }
-
-.wrapper {
+.row {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 2em;
-  text-align: center; }
+  padding: 0 2em; }
 
-.logo {
-  max-width: 50%;
-  margin: 0 auto 2em; }
-
-.logo img {
-  max-width: 100%;
-  display: block; }
-
-p {
-  letter-spacing: 0.5px; }
-
-@media all and (min-width: 600px) {
-  .wrapper {
-    display: table;
-    width: 100%; }
-
-  .btn {
-    max-width: 200px;
-    margin: 0; }
-
-  .logo {
-    /*float: left;*/
-    display: table-cell;
-    /*width: 25%;*/
-    display: block;
-    max-width: none;
-    padding-right: 2em;
-    vertical-align: middle;
-    text-align: right; }
-
-  .logo img {
-    max-width: 300px;
-    min-width: 250px;
-    margin: 0;
-    display: inline-block;
-    /*margin-left: auto;*/ }
-
-  .col {
-    /*float: left;*/
-    padding-left: 2em;
-    text-align: left;
-    display: table-cell;
-    /*width: 75%;*/
-    vertical-align: middle; } }
-@media all and (min-width: 768px) {
-  .logo, .col {
-    width: 50%; } }
-.links {
-  list-style: none;
-  padding: 0;
-  margin: 1em 0; }
-
-.links li {
-  display: inline-block;
-  margin-right: 1em; }
-
-.links li:last-child {
-  margin-right: 0; }
-
-.links a {
+img {
   display: block;
-  color: #FFF;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 1.5em;
-  transition: color 0.2s ease-out, transform 0.2s ease-out; }
+  max-width: 100%; }
 
-.links a:hover {
-  /*color: $clr-2;*/
-  transform: scale(1.15); }
+main {
+  background: #fff;
+  color: #333; }
 
-/* tool tip from https://chrisbracco.com/a-simple-css-tooltip/ */
-/* Add this attribute to the element that needs a tooltip */
-[data-tooltip] {
+section h2 {
+  margin: 0;
+  padding: 0 0 1em; }
+
+header {
   position: relative;
-  z-index: 2;
-  cursor: pointer; }
+  background: #FF474A;
+  padding: 48px 32px;
+  margin: 0;
+  overflow: hidden;
+  background: url("../images/map.svg") top center no-repeat #FF474A fixed;
+  background-size: cover; }
+  header .logo {
+    max-width: 500px;
+    margin: 0 auto;
+    display: block; }
+  header h1 {
+    display: block;
+    background: #fff;
+    max-width: 500px;
+    padding: 8px 16px;
+    margin: 32px auto 0;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    font-weight: bold; }
+    header h1 span {
+      font-weight: bold;
+      color: #FF474A; }
 
-/* Hide the tooltip content by default */
-[data-tooltip]:before, [data-tooltip]:after {
-  visibility: hidden;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  opacity: 0;
-  pointer-events: none; }
-
-/* Position tooltip above the element */
-[data-tooltip]:before {
-  position: absolute;
-  bottom: 150%;
-  left: 50%;
-  margin-bottom: 5px;
-  margin-left: -80px;
-  padding: 7px;
-  width: 160px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background-color: #000;
-  background-color: rgba(51, 51, 51, 0.9);
-  color: #fff;
-  content: attr(data-tooltip);
-  text-align: center;
-  font-size: 14px;
-  line-height: 1.2; }
-
-/* Triangle hack to make tooltip look like a speech bubble */
-[data-tooltip]:after {
-  position: absolute;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -5px;
-  width: 0;
-  border-top: 5px solid #000;
-  border-top: 5px solid rgba(51, 51, 51, 0.9);
-  border-right: 5px solid transparent;
-  border-left: 5px solid transparent;
-  content: " ";
-  font-size: 0;
-  line-height: 0; }
-
-/* Show tooltip content on hover */
-[data-tooltip]:hover:before, [data-tooltip]:hover:after {
-  visibility: visible;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  opacity: 1; }
+footer {
+  background: #333;
+  padding: 16px;
+  text-align: left;
+  color: #737373; }
 
 /*
     ===========================
