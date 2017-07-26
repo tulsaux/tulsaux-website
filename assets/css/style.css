@@ -768,6 +768,14 @@ template {
     Settings/Config/Mixins
     ===========================
 */
+.c-footer__social:before,
+.c-footer__social:after {
+  content: '';
+  display: table; }
+
+.c-footer__social:after {
+  clear: both; }
+
 /*
     ===========================
     Main CSS
@@ -908,13 +916,28 @@ footer {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center; }
+  text-align: center;
+  max-width: 180px;
+  margin: 0 auto;
+  display: block; }
+  @media screen and (min-width: 400px) {
+    .c-footer__social {
+      max-width: 100%; } }
   @media screen and (min-width: 600px) {
     .c-footer__social {
       text-align: left; } }
   .c-footer__social li {
-    display: inline-block;
-    padding: 0 1em 0 0; }
+    display: block;
+    width: 33.333%;
+    float: left;
+    text-align: center;
+    padding: 0 0 1em; }
+    @media screen and (min-width: 400px) {
+      .c-footer__social li {
+        float: none;
+        width: auto;
+        display: inline-block;
+        padding: 0 1em 0 0; } }
   .c-footer__social a {
     color: #fff;
     font-size: 2em; }
