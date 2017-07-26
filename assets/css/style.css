@@ -17,7 +17,7 @@ body {
 
 body:after {
 	content: "";
-	opacity: 0.25;
+	opacity: 0.5;
 	background: url('../images/map.svg') top center no-repeat #FF474A fixed;
 	background-size: cover;
 	position: fixed;
