@@ -1,0 +1,15 @@
+// Forms
+// ----------------------------------------------------------------------------
+
+.newsletter-signup {
+	display: none;
+	background: url('../images/map-gray.svg') top center no-repeat #999 fixed;
+	background-size: cover;
+	form {
+		outline: 1px solid red;
+		text-align: center;
+	}
+	.newsletter-signup__wrapper {
+		@extend %wrapper;
+	}
+}

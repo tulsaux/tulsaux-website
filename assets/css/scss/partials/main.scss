@@ -2,7 +2,9 @@ html {
 	box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:after,
+*:before {
 	box-sizing: inherit;
 }
 
@@ -29,12 +31,20 @@ img {
 main {
 	background: $white;
 	color: $clr-2;
+	padding: 32px 0 0;
 }
 
 section {
+	padding: 0 0 32px;
+
 	h2 {
 		margin: 0;
-		padding: 0 0 1em;
+		padding: 0 0 16px;
+	}
+
+	p {
+		margin: 0;
+		padding: 0 0 16px;
 	}
 }
 
@@ -42,6 +52,43 @@ section {
 	@extend %wrapper;
 }
 
+.btn {
+	border-radius: 5px;
+	padding: 8px 0;
+	text-align: center;
+	display: block;
+	margin: 0 0 1em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+	transition: all .2s ease;
+	@include mq-at-least(600px) {
+		text-align: left;
+		padding: 8px 16px;
+		display: inline-block;
+	}
+}
+
+.btn--red {
+	border: 2px solid $clr-1;
+	background: $clr-1;
+	color: $white;
+
+	&:hover {
+		border-color: $clr-2;
+		background: $clr-2;
+	}
+}
+
+.btn--ghost-red {
+	color: $clr-1;
+	border: 2px solid $clr-1;
+
+	&:hover {
+		background: $clr-1;
+		color: $white;
+	}
+}
 //
 // h1 {
 // 	display: block;
