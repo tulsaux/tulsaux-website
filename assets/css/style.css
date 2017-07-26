@@ -13,7 +13,7 @@
  */
 /* Document
    ========================================================================== */
-@import url("https://fonts.googleapis.com/css?family=News+Cycle:400,700");
+@import url("https://fonts.googleapis.com/css?family=News+Cycle:400,700|Roboto+Slab");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 html {
   font-family: sans-serif;
@@ -786,13 +786,17 @@ body {
   position: relative;
   padding: 0;
   margin: 0;
-  font-family: "News Cycle", "Helvetica Neue", Arial, Helvetica, sans-serif;
-  color: #FFFFFF; }
+  font-family: "Roboto Slab", serif;
+  color: #FFFFFF;
+  line-height: 1.5em; }
 
 .row, .newsletter-signup .newsletter-signup__wrapper, .c-footer__wrapper {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 2em; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "News Cycle", "Helvetica Neue", Arial, Helvetica, sans-serif; }
 
 img {
   display: block;
@@ -803,14 +807,17 @@ main {
   color: #333;
   padding: 32px 0 0; }
 
-section {
-  padding: 0 0 32px; }
-  section h2 {
-    margin: 0;
-    padding: 0 0 16px; }
-  section p {
-    margin: 0;
-    padding: 0 0 16px; }
+section > .row {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #EEE;
+  margin-bottom: 16px; }
+section h2 {
+  margin: 0;
+  padding: 0 0 16px; }
+section p {
+  margin: 0;
+  padding: 0 0 16px;
+  max-width: 700px; }
 
 .btn {
   border-radius: 5px;
@@ -821,11 +828,13 @@ section {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
-  transition: all .2s ease; }
+  transition: all .2s ease;
+  font-family: "News Cycle", "Helvetica Neue", Arial, Helvetica, sans-serif; }
   @media screen and (min-width: 600px) {
     .btn {
       text-align: left;
       padding: 8px 16px;
+      margin-right: 16px;
       display: inline-block; } }
 
 .btn--red {
@@ -842,6 +851,15 @@ section {
   .btn--ghost-red:hover {
     background: #FF474A;
     color: #fff; }
+
+.faqs-list li {
+  padding: 0 0 1em;
+  font-weight: bold; }
+.faqs-list span {
+  display: block;
+  color: #777;
+  padding: 0.5em 0 0;
+  font-weight: normal; }
 
 header {
   position: relative;
@@ -883,18 +901,31 @@ footer {
   background: #333;
   padding: 16px;
   text-align: left;
-  color: #737373; }
+  color: #737373;
+  font-family: "News Cycle", "Helvetica Neue", Arial, Helvetica, sans-serif; }
 
 .c-footer__social {
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  text-align: center; }
+  @media screen and (min-width: 600px) {
+    .c-footer__social {
+      text-align: left; } }
   .c-footer__social li {
     display: inline-block;
     padding: 0 1em 0 0; }
   .c-footer__social a {
     color: #fff;
     font-size: 2em; }
+
+.c-footer__copyright {
+  margin-top: 1em;
+  text-align: center; }
+  @media screen and (min-width: 600px) {
+    .c-footer__copyright {
+      margin: 0;
+      text-align: right; } }
 
 /*
     ===========================

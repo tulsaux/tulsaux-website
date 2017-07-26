@@ -13,14 +13,19 @@ body {
 	position: relative;
 	padding: 0;
 	margin: 0;
-	font-family: $news-cycle;
+	font-family: $roboto-slab;
 	color: #FFFFFF;
+	line-height: 1.5em;
 }
 
 %wrapper {
 	max-width: 1100px;
 	margin: 0 auto;
 	padding: 0 2em;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: $news-cycle;
 }
 
 img {
@@ -35,7 +40,11 @@ main {
 }
 
 section {
-	padding: 0 0 32px;
+	> .row {
+		padding-bottom: 8px;
+		border-bottom: 1px solid #EEE;
+		margin-bottom: 16px;
+	}
 
 	h2 {
 		margin: 0;
@@ -45,6 +54,8 @@ section {
 	p {
 		margin: 0;
 		padding: 0 0 16px;
+		max-width: 700px;
+
 	}
 }
 
@@ -62,9 +73,11 @@ section {
 	font-weight: bold;
 	text-decoration: none;
 	transition: all .2s ease;
+	font-family: $news-cycle;
 	@include mq-at-least(600px) {
 		text-align: left;
 		padding: 8px 16px;
+		margin-right: 16px;
 		display: inline-block;
 	}
 }
@@ -89,6 +102,22 @@ section {
 		color: $white;
 	}
 }
+
+
+.faqs-list {
+	li {
+		padding: 0 0 1em;
+		font-weight: bold;
+	}
+	span {
+		display: block;
+		color: #777;
+		padding: 0.5em 0 0;
+		font-weight: normal;
+	}
+}
+
+
 //
 // h1 {
 // 	display: block;
