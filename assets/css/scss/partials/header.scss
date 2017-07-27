@@ -32,6 +32,13 @@ header {
 	}
 
 	h1 {
+		font-size: 0.8em;
+		@include mq-at-least(350px){
+			font-size: 1em;
+		}
+		@include mq-at-least(600px){
+			font-size: 1.5em;
+		}
 		display: block;
 		background: $white;
 		max-width: 500px;
@@ -41,7 +48,8 @@ header {
 		color: $clr-2;
 		text-transform: uppercase;
 		letter-spacing: 2px;
-		font-size: 1.5em;
+		line-height: 1em;
+		// font-size: 1.5em;
 		font-weight: bold;
 		span {
 			font-weight: bold;
