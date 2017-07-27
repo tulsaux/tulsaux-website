@@ -13,7 +13,7 @@ footer {
 	@extend %wrapper;
 	// padding-left: 0;
 	// padding-left: 0;
-	@include mq-until(600px){
+	@include mq-until(600px) {
 		padding-left: 0;
 		padding-right: 0;
 	}
@@ -32,12 +32,13 @@ footer {
 	margin: 0 auto;
 	display: block;
 	@extend %clearfix;
-	@include mq-at-least(400px){
+	@include mq-at-least(400px) {
 		max-width: 100%;
 	}
-	@include mq-at-least(600px){
+	@include mq-at-least(600px) {
 		text-align: left;
 	}
+
 	li {
 		display: inline-block;
 		padding: 0 1em 0 0;
@@ -46,30 +47,37 @@ footer {
 		// float: left;
 		// text-align: center;
 		// padding: 0 0 1em;
-		@include mq-at-least(400px){
+		@include mq-at-least(400px) {
 			// float: none;
 			// width: auto;
 			// display: inline-block;
 			// padding: 0 1em 0 0;
 		}
 	}
+
 	a {
 		color: $white;
 		font-size: 1.5em;
-		transition: all 0.2s ease-out;
+
+		i {
+			transition: all .2s ease;
+		}
+
 		&:hover {
 			color: $clr-1;
-			-webkit-transform: scale(3);
-			transform: scale(3);
+
+			i {
+				transform: scale(1.2);
+			}
 		}
-		@include mq-at-least(400px){
+		@include mq-at-least(400px) {
 			// font-size: 1.5em;
 		}
 	}
 }
 
-
-.c-footer__links, .c-footer__copyright {
+.c-footer__copyright,
+.c-footer__links {
 	@extend %grid__item;
 	@extend %lap--one-half;
 }
@@ -77,7 +85,7 @@ footer {
 .c-footer__copyright {
 	margin-top: 1em;
 	text-align: center;
-	@include mq-at-least(600px){
+	@include mq-at-least(600px) {
 		margin: 0;
 		text-align: right;
 	}
