@@ -13,7 +13,8 @@
 
 <body>
     <header>
-        <img class="logo" src="/assets/images/logo-horizontal.svg" alt="Tulsa UX" />
+        <img class="logo logo--horz" src="/assets/images/logo-horizontal.svg" alt="Tulsa UX" />
+        <img class="logo logo--vert" src="/assets/images/logo-vertical.svg" alt="Tulsa UX" />
         <h1>User&nbsp;Experience <span>User&nbsp;Group</span></h1>
     </header>
     <main>
@@ -21,8 +22,8 @@
             <div class="row">
                 <div class="col">
                     <h2>Next Meetup</h2>
-                    <p>Our next meetup is on Tuesday, August 8th.</p>
-                    <a class="btn btn--red" href="https://www.meetup.com/Tulsa-UX-User-Group/events/241387945/">Register</a>
+                    <p>Our next meetup is on Tuesday, August 8th. Learn more about the meeting, what we'll discuss and more: </p>
+                    <a class="btn btn--red" href="https://www.meetup.com/Tulsa-UX-User-Group/events/241387945/">RSVP</a>
                     <a class="btn btn--ghost-red" href="https://www.meetup.com/Tulsa-UX-User-Group/events/">See all events</a>
                 </div>
             </div>
@@ -51,15 +52,23 @@
             <div class="row">
                 <div class="col">
                     <h2>Sponsors</h2>
-                    <ul>
-                        <li>
-                            Techlahoma
+                    <ul class="c-sponsors">
+                        <li class="c-sponsors__card">
+                            <div class="c-sponsors__card__logo"><img src='assets/media/sponsor-techlahoma.jpg' alt="Techlahoma logo" /></div>
+                            <a href="https://www.techlahoma.org/">Techlahoma</a>
+                            <p>Group Sponsor</p>
                         </li>
-                        <li>
-                            <a href="https://36degreesnorth.co">36&deg; North Co-working Space</a>
+                        <li class="c-sponsors__card">
+                            <div class="c-sponsors__card__logo"><img src='assets/media/sponsor-36n.jpg' alt="36&deg; North logo" /></div>
+                            <a href="https://36degreesnorth.co">36&deg; North Co&#8209;working&nbsp;Space</a>
+                            <p>Event Space Sponsor</p>
+
                         </li>
-                        <li>
-                            TEKsystems Digital
+                        <li class="c-sponsors__card">
+                            <div class="c-sponsors__card__logo"><img src='assets/media/sponsor-teksystems.jpg' alt="TEKsystems logo" /></div>
+                            <a href="https://www.teksystems.com/">TEKsystems Digital</a>
+                            <p>Food/Refreshments Sponsor</p>
+
                         </li>
                     </ul>
                 </div>
@@ -82,6 +91,11 @@
                             How often do you meet?
                             <span>We meet the second Tuesday of each month at 36&deg; North Co-working Space from 6 - 8pm.</span>
                         </li>
+                        <li>What does "user experience" mean?
+                            <span>
+                                "The overall experience of a person using a product such as a website or computer application, especially in terms of how easy or pleasing it is to use." <a href="https://www.nngroup.com/articles/definition-user-experience/" title="The Definition of User Experience (UX)"><em>&ndash; Nielson Norman Group</em></a>
+                            </span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -98,24 +112,26 @@
     <aside class="newsletter-signup">
         <div class="newsletter-signup__wrapper">
             <!-- Begin MailChimp Signup Form -->
+            <h2>Newsletter Signup</h2>
             <div id="mc_embed_signup">
-                <form action="//tulsaux.us16.list-manage.com/subscribe/post?u=210a9804a4141712ff6b0b2b8&amp;id=a479465728" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                    <div id="mc_embed_signup_scroll">
+            	<form action="//tulsaux.us16.list-manage.com/subscribe/post?u=210a9804a4141712ff6b0b2b8&amp;id=a479465728" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            		<div id="mc_embed_signup_scroll">
+            			<!-- <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> -->
+            			<div class="mc-field-group">
+            				<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                            </label>
+            				<input type="email" value="" name="EMAIL" placeholder="name@example.com" class="required email" id="mce-EMAIL"><!--
+                            --><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn--red submit">
+            			</div>
+            			<div id="mce-responses" class="clear">
+            				<div class="response" id="mce-error-response" style="display:none"></div>
+            				<div class="response" id="mce-success-response" style="display:none"></div>
+            			</div>
+            			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            			<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_210a9804a4141712ff6b0b2b8_a479465728" tabindex="-1" value=""></div>
 
-                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                <div class="mc-field-group">
-                	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-                </label>
-                	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                </div>
-                	<div id="mce-responses" class="clear">
-                		<div class="response" id="mce-error-response" style="display:none"></div>
-                		<div class="response" id="mce-success-response" style="display:none"></div>
-                	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_210a9804a4141712ff6b0b2b8_a479465728" tabindex="-1" value=""></div>
-                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn"></div>
-                    </div>
-                </form>
+            		</div>
+            	</form>
             </div>
 
             <!--End mc_embed_signup-->
@@ -159,7 +175,7 @@
                     </ul>
                 </div><!--
                 --><div class="c-footer__copyright">
-                    Copyright &copy; 2017 Copyright Tulsa UX All Rights Reserved.
+                    Copyright &copy; 2017 Copyright Tulsa UX. All&nbsp;Rights&nbsp;Reserved.
                 </div>
 
             </div>

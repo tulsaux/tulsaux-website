@@ -36,10 +36,15 @@ img {
 main {
 	background: $white;
 	color: $clr-2;
-	padding: 32px 0 0;
+	padding: 32px 0;
 }
 
 section {
+	&:last-child {
+		> .row {
+			border: none;
+		}
+	}
 	> .row {
 		padding-bottom: 8px;
 		border-bottom: 1px solid #EEE;
@@ -47,14 +52,14 @@ section {
 	}
 
 	h2 {
-		margin: 0;
+		margin: 1em 0 0;
 		padding: 0 0 16px;
 	}
 
 	p {
 		margin: 0;
 		padding: 0 0 16px;
-		max-width: 700px;
+		// max-width: 800px;
 
 	}
 }
@@ -74,12 +79,21 @@ section {
 	text-decoration: none;
 	transition: all .2s ease;
 	font-family: $news-cycle;
+	letter-spacing: 1px;
 	@include mq-at-least(600px) {
 		text-align: left;
 		padding: 8px 16px;
 		margin-right: 16px;
 		display: inline-block;
 	}
+}
+
+button.btn, input.btn  {
+	appearance: none;
+	-webkit-appearance: none;
+	outline: 0;
+	border-radius: 5px;
+	border: 0;
 }
 
 .btn--red {
@@ -114,9 +128,79 @@ section {
 		color: #777;
 		padding: 0.5em 0 0;
 		font-weight: normal;
+		a {
+			color: #999;
+			text-decoration: none;
+		}
 	}
 }
 
+
+.c-sponsors {
+	@extend %clearfix;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	@include mq-at-least(768px){
+		padding-bottom: 1em;
+	}
+}
+
+.c-sponsors__card {
+	display: block;
+	text-align: center;
+	max-width: 400px;
+	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 1px solid #EEE;
+	&:last-child {
+		border: none;
+	}
+	@include mq-at-least(768px){
+		// text-align: left;
+		margin-top: 0;
+		border-bottom: none;
+		float: left;
+		width: calc(33.333% - 1em);
+		margin-left: 1.25em;
+		&:first-child {
+			margin-left: 0;
+		}
+
+	}
+
+	p {
+		font-style: italic;
+	}
+	a {
+		color: $clr-1;
+		font-size: 1.5em;
+		margin: 0;
+		padding: 0;
+		text-decoration: none;
+		transition: color 0.2s ease;
+		&:hover {
+			color: $clr-2;
+		}
+	}
+
+}
+
+.c-sponsors__card__logo {
+	margin-bottom: 1em;
+	@include mq-at-least(768px){
+		height: 180px;
+		display: flex;
+  		align-items: center;
+	}
+
+	img {
+		// outline: 1px solid green;
+		max-width: 100%;
+	}
+}
 
 //
 // h1 {

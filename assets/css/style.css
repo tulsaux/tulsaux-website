@@ -768,12 +768,14 @@ template {
     Settings/Config/Mixins
     ===========================
 */
-.c-footer__social:before,
+.c-sponsors:before, .newsletter-signup:before, .c-footer__social:before,
+.c-sponsors:after,
+.newsletter-signup:after,
 .c-footer__social:after {
   content: '';
   display: table; }
 
-.c-footer__social:after {
+.c-sponsors:after, .newsletter-signup:after, .c-footer__social:after {
   clear: both; }
 
 /*
@@ -813,19 +815,20 @@ img {
 main {
   background: #fff;
   color: #333;
-  padding: 32px 0 0; }
+  padding: 32px 0; }
 
+section:last-child > .row {
+  border: none; }
 section > .row {
   padding-bottom: 8px;
   border-bottom: 1px solid #EEE;
   margin-bottom: 16px; }
 section h2 {
-  margin: 0;
+  margin: 1em 0 0;
   padding: 0 0 16px; }
 section p {
   margin: 0;
-  padding: 0 0 16px;
-  max-width: 700px; }
+  padding: 0 0 16px; }
 
 .btn {
   border-radius: 5px;
@@ -837,13 +840,21 @@ section p {
   font-weight: bold;
   text-decoration: none;
   transition: all .2s ease;
-  font-family: "News Cycle", "Helvetica Neue", Arial, Helvetica, sans-serif; }
+  font-family: "News Cycle", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  letter-spacing: 1px; }
   @media screen and (min-width: 600px) {
     .btn {
       text-align: left;
       padding: 8px 16px;
       margin-right: 16px;
       display: inline-block; } }
+
+button.btn, input.btn {
+  appearance: none;
+  -webkit-appearance: none;
+  outline: 0;
+  border-radius: 5px;
+  border: 0; }
 
 .btn--red {
   border: 2px solid #FF474A;
@@ -868,6 +879,59 @@ section p {
   color: #777;
   padding: 0.5em 0 0;
   font-weight: normal; }
+  .faqs-list span a {
+    color: #999;
+    text-decoration: none; }
+
+.c-sponsors {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .c-sponsors {
+      padding-bottom: 1em; } }
+
+.c-sponsors__card {
+  display: block;
+  text-align: center;
+  max-width: 400px;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #EEE; }
+  .c-sponsors__card:last-child {
+    border: none; }
+  @media screen and (min-width: 768px) {
+    .c-sponsors__card {
+      margin-top: 0;
+      border-bottom: none;
+      float: left;
+      width: calc(33.333% - 1em);
+      margin-left: 1.25em; }
+      .c-sponsors__card:first-child {
+        margin-left: 0; } }
+  .c-sponsors__card p {
+    font-style: italic; }
+  .c-sponsors__card a {
+    color: #FF474A;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    transition: color 0.2s ease; }
+    .c-sponsors__card a:hover {
+      color: #333; }
+
+.c-sponsors__card__logo {
+  margin-bottom: 1em; }
+  @media screen and (min-width: 768px) {
+    .c-sponsors__card__logo {
+      height: 180px;
+      display: flex;
+      align-items: center; } }
+  .c-sponsors__card__logo img {
+    max-width: 100%; }
 
 header {
   position: relative;
@@ -881,6 +945,17 @@ header {
     max-width: 500px;
     margin: 0 auto;
     display: block; }
+    header .logo.logo--horz {
+      max-width: 500px;
+      display: none; }
+      @media screen and (min-width: 600px) {
+        header .logo.logo--horz {
+          display: block; } }
+    header .logo.logo--vert {
+      max-width: 500px; }
+      @media screen and (min-width: 600px) {
+        header .logo.logo--vert {
+          display: none; } }
   header h1 {
     display: block;
     background: #fff;
@@ -898,22 +973,91 @@ header {
       color: #FF474A; }
 
 .newsletter-signup {
-  display: none;
   background: url("../images/map-gray.svg") top center no-repeat #999 fixed;
-  background-size: cover; }
+  background-size: cover;
+  padding-top: 1em;
+  padding-bottom: 1em; }
   .newsletter-signup form {
-    outline: 1px solid red;
+    vertical-align: top;
+    text-align: center;
+    display: block;
+    transition: max-width 0.2s ease-out;
+    width: 100%; }
+    @media screen and (min-width: 860px) {
+      .newsletter-signup form {
+        max-width: 500px;
+        float: right;
+        text-align: right; } }
+    @media screen and (min-width: 1024px) {
+      .newsletter-signup form {
+        max-width: 600px; } }
+    .newsletter-signup form label {
+      margin-right: 1em;
+      padding-bottom: 8px;
+      text-align: left;
+      display: block; }
+      @media screen and (min-width: 860px) {
+        .newsletter-signup form label {
+          padding-bottom: 0;
+          display: inline-block; } }
+    .newsletter-signup form input {
+      display: block;
+      border-radius: 5px;
+      border: none;
+      width: 100%;
+      margin-bottom: 1em; }
+      @media screen and (min-width: 550px) {
+        .newsletter-signup form input {
+          display: inline-block;
+          width: calc(50% - 1em); } }
+      @media screen and (min-width: 860px) {
+        .newsletter-signup form input {
+          display: inline-block;
+          width: auto;
+          margin-bottom: 0; } }
+    .newsletter-signup form .email {
+      height: 50px;
+      line-height: 50px;
+      padding: 0 1em 0 1em;
+      min-width: 200px; }
+      @media screen and (min-width: 550px) {
+        .newsletter-signup form .email {
+          margin-right: 1em; } }
+      @media screen and (min-width: 1024px) {
+        .newsletter-signup form .email {
+          min-width: 300px; } }
+    .newsletter-signup form .submit {
+      height: 50px;
+      padding-top: 0;
+      padding-bottom: 0;
+      line-height: 50px;
+      margin-bottom: 0;
+      text-align: center;
+      display: inline-block; }
+  .newsletter-signup h2 {
+    margin: 0 0 16px;
+    font-family: "Roboto Slab", serif;
     text-align: center; }
+    @media screen and (min-width: 860px) {
+      .newsletter-signup h2 {
+        text-align: left;
+        float: left;
+        margin: 0;
+        height: 50px;
+        line-height: 50px;
+        display: block; } }
 
 footer {
   background: #333;
-  padding: 16px;
+  padding: 24px 16px;
   text-align: left;
   color: #737373;
   font-family: "News Cycle", "Helvetica Neue", Arial, Helvetica, sans-serif; }
 
-.c-footer__wrapper {
-  padding: 0; }
+@media screen and (max-width: 599px) {
+  .c-footer__wrapper {
+    padding-left: 0;
+    padding-right: 0; } }
 
 .c-footer__social {
   list-style: none;
@@ -933,10 +1077,12 @@ footer {
     padding: 0 1em 0 0; }
   .c-footer__social a {
     color: #fff;
-    font-size: 1.5em; }
-    @media screen and (min-width: 400px) {
-      .c-footer__social a {
-        font-size: 2em; } }
+    font-size: 1.5em;
+    transition: all 0.2s ease-out; }
+    .c-footer__social a:hover {
+      color: #FF474A;
+      -webkit-transform: scale(3);
+      transform: scale(3); }
 
 .c-footer__copyright {
   margin-top: 1em;

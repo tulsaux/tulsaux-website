@@ -18,6 +18,19 @@ header {
 		margin: 0 auto;
 		// padding: 200px 0;
 		display: block;
+		&.logo--horz {
+			max-width: 500px;
+			display: none;
+			@include mq-at-least(600px){
+				display: block;
+			}
+		}
+		&.logo--vert {
+			max-width: 500px;
+			@include mq-at-least(600px){
+				display: none;
+			}
+		}
 	}
 
 	h1 {
