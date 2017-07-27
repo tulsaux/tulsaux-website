@@ -2,13 +2,13 @@
 	<defs>
 		<style>
 			.cls-1 {
-				fill: #FF474A;
+				fill: none;
 			}
 			.cls-2 {
-				fill: #e72b2e;
+				fill: #888;
 			}
 			.cls-3 {
-				fill: #e72b2e;
+				fill: #888;
 			}
 		</style>
 	</defs>
