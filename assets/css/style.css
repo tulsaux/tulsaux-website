@@ -537,16 +537,6 @@ template {
  * 2. Remove any margins and paddings that might affect the grid system.
  * 3. Apply a negative `margin-left` to negate the columns’ gutters.
  */
-.c-footer {
-  list-style: none;
-  /* [1] */
-  margin: 0;
-  /* [2] */
-  padding: 0;
-  /* [2] */
-  margin-left: -16px;
-  /* [3] */ }
-
 /**
  * 1. Cause columns to stack side-by-side.
  * 2. Space columns apart.
@@ -554,23 +544,6 @@ template {
  * 4. Full-width unless told to behave otherwise.
  * 5. Required to combine fluid widths and fixed gutters.
  */
-.c-footer__copyright,
-.c-footer__links {
-  display: inline-block;
-  /* [1] */
-  padding-left: 16px;
-  /* [2] */
-  vertical-align: top;
-  /* [3] */
-  width: 100%;
-  /* [4] */
-  -webkit-box-sizing: border-box;
-  /* [5] */
-  -moz-box-sizing: border-box;
-  /* [5] */
-  box-sizing: border-box;
-  /* [5] */ }
-
 /**
  * Reversed grids allow you to structure your source in the opposite order to
  * how your rendered layout will appear. Extends `.grid`.
@@ -670,10 +643,6 @@ template {
   /**
    * Halves
    */
-  .c-footer__copyright,
-  .c-footer__links {
-    width: 50%; }
-
   /**
    * Thirds
    */
@@ -851,7 +820,7 @@ section p {
   font-family: "News Cycle", "Helvetica Neue", Arial, Helvetica, sans-serif;
   letter-spacing: 1px; }
   .btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     cursor: pointer; }
   @media screen and (min-width: 600px) {
     .btn {
@@ -1078,6 +1047,14 @@ footer {
     padding-left: 0;
     padding-right: 0; } }
 
+.c-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  @media screen and (max-width: 599px) {
+    .c-footer {
+      display: block; } }
+
 .c-footer__social {
   list-style: none;
   margin: 0;
@@ -1103,6 +1080,11 @@ footer {
       color: #FF474A; }
       .c-footer__social a:hover i {
         transform: scale(1.2); }
+
+@media screen and (max-width: 599px) {
+  .c-footer__copyright,
+  .c-footer__links {
+    display: block; } }
 
 .c-footer__copyright {
   margin-top: 1em;

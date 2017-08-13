@@ -92,7 +92,7 @@ section {
 	font-family: $news-cycle;
 	letter-spacing: 1px;
 	&:hover {
-		transform: scale(1.1);
+		transform: scale(1.05);
 		cursor: pointer;
 	}
 	@include mq-at-least(600px) {
