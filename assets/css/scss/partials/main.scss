@@ -22,6 +22,11 @@ body {
 	max-width: 1100px;
 	margin: 0 auto;
 	padding: 0 2em;
+	transition: padding 0.2s ease;
+	@include mq-at-least(1200px){
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 h1, h2, h3, h4, h5 {

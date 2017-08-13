@@ -67,3 +67,13 @@
 @mixin translate ($x, $y) {
    @include transform(translate($x, $y));
 }
+
+// flexbox
+
+%flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
