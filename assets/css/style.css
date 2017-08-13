@@ -1107,6 +1107,10 @@ footer {
 .c-footer__copyright {
   margin-top: 1em;
   text-align: center; }
+  .c-footer__copyright a {
+    color: #8c8c8c; }
+    .c-footer__copyright a:hover {
+      color: #a6a6a6; }
   @media screen and (min-width: 600px) {
     .c-footer__copyright {
       margin: 0;

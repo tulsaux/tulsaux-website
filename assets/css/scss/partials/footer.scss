@@ -85,6 +85,12 @@ footer {
 .c-footer__copyright {
 	margin-top: 1em;
 	text-align: center;
+	a {
+		color: lighten($clr-2, 35%);
+		&:hover {
+			color: lighten($clr-2, 45%);
+		}
+	}
 	@include mq-at-least(600px) {
 		margin: 0;
 		text-align: right;
