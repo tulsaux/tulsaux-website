@@ -223,3 +223,71 @@ button.btn, input.btn  {
 		max-width: 100%;
 	}
 }
+
+.c-presenters {
+	@extend %clearfix;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	@include mq-at-least(768px){
+		padding-bottom: 1em;
+	}
+}
+
+
+.c-presenters__card {
+	display: block;
+	text-align: left;
+	max-width: 500px;
+	margin-top: 2em;
+	margin-left: 0;
+	margin-right: 0;
+	border-bottom: 1px solid #EEE;
+	&:last-child {
+		border: none;
+	}
+	@include mq-at-least(768px){
+		// text-align: left;
+		margin-top: 0;
+		border-bottom: none;
+		float: left;
+		width: calc(33.333% - 1em);
+		margin-left: 1.25em;
+		&:first-child {
+			margin-left: 0;
+		}
+
+	}
+
+	time {
+		font-size: 0.7em;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		font-variant: small-caps;
+		display: block;
+		margin: 0;
+		padding: 0 0 4px;
+	}
+
+	h2 {
+		margin: 0;
+		padding: 0 0 8px;
+	}
+
+	h3 {
+		font-size: 1.3em;
+		margin: 0;
+		padding: 0;
+		font-style: italic;
+	}
+	p {
+		margin: 8px 0 0;
+		padding: 0;
+	}
+
+	a {
+		margin-top: 16px;
+	}
+
+}

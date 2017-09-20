@@ -737,15 +737,16 @@ template {
     Settings/Config/Mixins
     ===========================
 */
-.c-sponsors:before, .newsletter-signup:before, .newsletter-signup__wrapper:before, .c-footer__social:before,
+.c-sponsors:before, .c-presenters:before, .newsletter-signup:before, .newsletter-signup__wrapper:before, .c-footer__social:before,
 .c-sponsors:after,
+.c-presenters:after,
 .newsletter-signup:after,
 .newsletter-signup__wrapper:after,
 .c-footer__social:after {
   content: '';
   display: table; }
 
-.c-sponsors:after, .newsletter-signup:after, .newsletter-signup__wrapper:after, .c-footer__social:after {
+.c-sponsors:after, .c-presenters:after, .newsletter-signup:after, .newsletter-signup__wrapper:after, .c-footer__social:after {
   clear: both; }
 
 /*
@@ -919,6 +920,56 @@ button.btn, input.btn {
       align-items: center; } }
   .c-sponsors__card__logo img {
     max-width: 100%; }
+
+.c-presenters {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .c-presenters {
+      padding-bottom: 1em; } }
+
+.c-presenters__card {
+  display: block;
+  text-align: left;
+  max-width: 500px;
+  margin-top: 2em;
+  margin-left: 0;
+  margin-right: 0;
+  border-bottom: 1px solid #EEE; }
+  .c-presenters__card:last-child {
+    border: none; }
+  @media screen and (min-width: 768px) {
+    .c-presenters__card {
+      margin-top: 0;
+      border-bottom: none;
+      float: left;
+      width: calc(33.333% - 1em);
+      margin-left: 1.25em; }
+      .c-presenters__card:first-child {
+        margin-left: 0; } }
+  .c-presenters__card time {
+    font-size: 0.7em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    display: block;
+    margin: 0;
+    padding: 0 0 4px; }
+  .c-presenters__card h2 {
+    margin: 0;
+    padding: 0 0 8px; }
+  .c-presenters__card h3 {
+    font-size: 1.3em;
+    margin: 0;
+    padding: 0;
+    font-style: italic; }
+  .c-presenters__card p {
+    margin: 8px 0 0;
+    padding: 0; }
+  .c-presenters__card a {
+    margin-top: 16px; }
 
 header {
   position: relative;
