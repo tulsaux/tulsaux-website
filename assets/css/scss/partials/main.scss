@@ -23,6 +23,10 @@ body {
 	margin: 0 auto;
 	padding: 0 2em;
 	transition: padding 0.2s ease;
+	@include mq-until(768px) {
+		padding-left: safe-area-inset-left;
+		padding-right: safe-area-inset-right;
+	}
 	@include mq-at-least(1200px){
 		padding-left: 0;
 		padding-right: 0;
