@@ -778,8 +778,8 @@ body {
   transition: padding 0.2s ease; }
   @media screen and (max-width: 767px) {
     .row, .newsletter-signup__wrapper, .c-footer__wrapper {
-      padding-left: safe-area-inset-left;
-      padding-right: safe-area-inset-right; } }
+      padding-left: env(safe-area-inset-left);
+      padding-right: env(safe-area-inset-right); } }
   @media screen and (min-width: 1200px) {
     .row, .newsletter-signup__wrapper, .c-footer__wrapper {
       padding-left: 0;
@@ -1004,8 +1004,6 @@ header {
     background: #fff;
     max-width: 500px;
     padding: 8px 16px;
-    padding-left: safe-area-inset-left;
-    padding-right: safe-area-inset-right;
     margin: 32px auto 0;
     text-align: center;
     color: #333;
@@ -1127,10 +1125,6 @@ footer {
   text-align: left;
   color: #737373;
   font-family: "News Cycle", "Helvetica Neue", Arial, Helvetica, sans-serif; }
-  @media screen and (max-width: 599px) {
-    footer {
-      padding-left: safe-area-inset-left;
-      padding-right: safe-area-inset-right; } }
 
 @media screen and (max-width: 599px) {
   .c-footer__wrapper {

@@ -8,8 +8,8 @@ footer {
 	color: lighten($clr-2, 25%);
 	font-family: $news-cycle;
 	@include mq-until(600px) {
-		padding-left: safe-area-inset-left;
-		padding-right: safe-area-inset-right;
+		// padding-left: safe-area-inset-left;
+		// padding-right: safe-area-inset-right;
 	}
 }
 
