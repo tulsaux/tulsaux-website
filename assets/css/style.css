@@ -932,6 +932,8 @@ button.btn, input.btn {
   position: relative; }
   @media screen and (min-width: 768px) {
     .c-presenters {
+      display: flex;
+      flex-wrap: wrap;
       padding-bottom: 1em; } }
 
 .c-presenters__card {
@@ -947,12 +949,12 @@ button.btn, input.btn {
   @media screen and (min-width: 768px) {
     .c-presenters__card {
       margin-top: 0;
+      margin-bottom: 2em;
       border-bottom: none;
-      float: left;
-      width: calc(33.333% - 1em);
-      margin-left: 1.25em; }
-      .c-presenters__card:first-child {
-        margin-left: 0; } }
+      width: calc(33.333% - 1em); }
+      .c-presenters__card:nth-child(3n+2) {
+        margin-left: 1em;
+        margin-right: 1em; } }
   .c-presenters__card time {
     font-size: 0.7em;
     letter-spacing: 2px;
@@ -968,7 +970,20 @@ button.btn, input.btn {
     font-size: 1.3em;
     margin: 0;
     padding: 0;
+    line-height: 1.3em;
     font-style: italic; }
+  .c-presenters__card h4 {
+    font-size: 0.7em;
+    line-height: 1.2em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    display: block;
+    margin: 0;
+    padding: 8px 0 0; }
+    .c-presenters__card h4 a {
+      color: #333;
+      text-decoration: none; }
   .c-presenters__card p {
     margin: 8px 0 0;
     padding: 0; }

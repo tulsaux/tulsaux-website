@@ -235,6 +235,8 @@ button.btn, input.btn  {
 	list-style: none;
 	position: relative;
 	@include mq-at-least(768px){
+		display: flex;
+		flex-wrap: wrap;
 		padding-bottom: 1em;
 	}
 }
@@ -254,12 +256,14 @@ button.btn, input.btn  {
 	@include mq-at-least(768px){
 		// text-align: left;
 		margin-top: 0;
+		margin-bottom: 2em;
 		border-bottom: none;
-		float: left;
+		// float: left;
 		width: calc(33.333% - 1em);
-		margin-left: 1.25em;
-		&:first-child {
-			margin-left: 0;
+
+		&:nth-child(3n+2) {
+			margin-left: 1em;
+			margin-right: 1em;
 		}
 
 	}
@@ -283,8 +287,25 @@ button.btn, input.btn  {
 		font-size: 1.3em;
 		margin: 0;
 		padding: 0;
+		line-height: 1.3em;
 		font-style: italic;
 	}
+
+	h4 {
+		font-size: 0.7em;
+		line-height: 1.2em;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		font-variant: small-caps;
+		display: block;
+		margin: 0;
+		padding: 8px 0 0;
+		a {
+			color: $clr-2;
+			text-decoration: none;
+		}
+	}
+
 	p {
 		margin: 8px 0 0;
 		padding: 0;
