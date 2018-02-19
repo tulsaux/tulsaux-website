@@ -239,6 +239,7 @@ button.btn, input.btn  {
 	padding: 0;
 	list-style: none;
 	position: relative;
+
 	@include mq-at-least(768px){
 		display: flex;
 		flex-wrap: wrap;
@@ -248,6 +249,9 @@ button.btn, input.btn  {
 
 
 .c-presenters__card {
+	&:nth-child(n + 4){
+		display: none;
+	}
 	display: block;
 	text-align: left;
 	max-width: 500px;
@@ -259,6 +263,9 @@ button.btn, input.btn  {
 		border: none;
 	}
 	@include mq-at-least(768px){
+		&:nth-child(n + 4){
+			display: block;
+		}
 		// text-align: left;
 		margin-top: 0;
 		margin-bottom: 2em;

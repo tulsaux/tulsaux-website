@@ -944,6 +944,8 @@ button.btn, input.btn {
   margin-left: 0;
   margin-right: 0;
   border-bottom: 1px solid #EEE; }
+  .c-presenters__card:nth-child(n + 4) {
+    display: none; }
   .c-presenters__card:last-child {
     border: none; }
   @media screen and (min-width: 768px) {
@@ -952,6 +954,8 @@ button.btn, input.btn {
       margin-bottom: 2em;
       border-bottom: none;
       width: calc(33.333% - 1em); }
+      .c-presenters__card:nth-child(n + 4) {
+        display: block; }
       .c-presenters__card:nth-child(3n+2) {
         margin-left: 1em;
         margin-right: 1em; } }
