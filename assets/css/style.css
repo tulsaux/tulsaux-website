@@ -875,6 +875,19 @@ button.btn, input.btn {
     color: #999;
     text-decoration: none; }
 
+.c-hero-event p {
+  margin: 0;
+  padding: 0 0 1em; }
+.c-hero-event blockquote {
+  margin: 1em 0 1em 0;
+  padding: 0 0 0 1em;
+  display: block;
+  font-style: italic;
+  color: #999;
+  border-left: 1px dashed #FF474A; }
+.c-hero-event p ~ blockquote {
+  margin-top: 0; }
+
 .c-sponsors {
   margin: 0 auto;
   padding: 0;

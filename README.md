@@ -1,5 +1,9 @@
-# tulsaux-website
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+# Tulsa UX Website
 Website for TulsaUX.com
+
+> Tulsa UX meets once a month to discuss the latest UX/UI trends, hear from industry professionals in our community and discuss best HCD practices!
 
 ## Compile SASS
 
