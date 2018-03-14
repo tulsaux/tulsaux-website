@@ -18,4 +18,8 @@
   } else {
     console.log('no-notch');
   }
+
+// TODO: Add JS Function to display additional speakers
+
+
 })();

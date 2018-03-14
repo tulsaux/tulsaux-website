@@ -957,6 +957,9 @@ button.btn, input.btn {
   margin-left: 0;
   margin-right: 0;
   border-bottom: 1px solid #EEE; }
+  .c-presenters__card.disabled {
+    display: none !important;
+    outline: 1px solid red; }
   .c-presenters__card:nth-child(n + 4) {
     display: none; }
   .c-presenters__card:last-child {

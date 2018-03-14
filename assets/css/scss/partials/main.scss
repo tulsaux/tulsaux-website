@@ -264,8 +264,13 @@ button.btn, input.btn  {
 	}
 }
 
-
 .c-presenters__card {
+
+	&.disabled {
+		display: none !important;
+		outline: 1px solid red;
+	}
+
 	&:nth-child(n + 4){
 		display: none;
 	}
