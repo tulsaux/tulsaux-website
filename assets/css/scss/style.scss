@@ -1,0 +1,36 @@
+// sass --watch scss/style.scss:style.css
+/*
+    ===========================
+    Libs
+    ===========================
+*/
+@import "libs/normalize";
+@import "libs/csswizardry-grids";
+/*
+    ===========================
+    Settings/Config/Mixins
+    ===========================
+*/
+@import "partials/config";
+@import "partials/settings";
+@import "partials/utils";
+@import "partials/mixins";
+@import "partials/fonts";
+
+/*
+    ===========================
+    Main CSS
+    ===========================
+*/
+
+@import "partials/main";
+@import "partials/header";
+@import "partials/forms";
+@import "partials/footer";
+@import "partials/webkit";
+
+/*
+    ===========================
+    CDN Imports
+    ===========================
+*/

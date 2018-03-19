@@ -1,0 +1,61 @@
+// Header
+// ----------------------------------------------------------------------------
+
+header {
+
+	position: relative;
+	background: $clr-1;
+	padding: 48px 32px;
+	margin: 0;
+	overflow: hidden;
+	background: url('../images/map.svg') top center no-repeat $clr-1 fixed;
+	background-size: cover;
+
+	.logo {
+		max-width: 500px;
+		margin: 0 auto;
+		// padding: 200px 0;
+		display: block;
+		&.logo--horz {
+			max-width: 500px;
+			display: none;
+			@include mq-at-least(600px){
+				display: block;
+			}
+		}
+		&.logo--vert {
+			max-width: 500px;
+			@include mq-at-least(600px){
+				display: none;
+			}
+		}
+	}
+
+	h1 {
+		font-size: 0.8em;
+		@include mq-at-least(350px){
+			font-size: 1em;
+		}
+		@include mq-at-least(600px){
+			font-size: 1.5em;
+		}
+		display: block;
+		background: $white;
+		max-width: 500px;
+		padding: 8px 16px;
+		// padding-left: safe-area-inset-left;
+		// padding-right: safe-area-inset-right;
+		margin: 32px auto 0;
+		text-align: center;
+		color: $clr-2;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		line-height: 1em;
+		// font-size: 1.5em;
+		font-weight: bold;
+		span {
+			font-weight: bold;
+			color: $clr-1;
+		}
+	}
+}
