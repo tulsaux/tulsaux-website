@@ -811,8 +811,8 @@ section > .row {
 section h2 {
   margin: 1em 0 0;
   padding: 0 0 16px; }
-  section h2 i {
-    margin-right: 8px;
+  section h2 svg {
+    margin-right: 4px;
     color: #FF474A; }
 section p {
   margin: 0;
