@@ -859,6 +859,14 @@ button.btn, input.btn {
 .btn--ghost-red {
   color: #FF474A;
   border: 2px solid #FF474A; }
+  .btn--ghost-red.disabled {
+    color: #b3b3b3;
+    border-color: #b3b3b3;
+    cursor: not-allowed; }
+    .btn--ghost-red.disabled:hover {
+      color: #b3b3b3;
+      border-color: #b3b3b3;
+      background: none; }
   .btn--ghost-red:hover {
     background: #FF474A;
     color: #fff; }
@@ -1000,7 +1008,12 @@ button.btn, input.btn {
     padding: 8px 0 0; }
     .c-presenters__card h4 a {
       color: #333;
-      text-decoration: none; }
+      text-decoration: none;
+      border-bottom: 1px dashed #333;
+      transition: all 0.2s ease-out; }
+      .c-presenters__card h4 a:hover {
+        color: #FF474A;
+        border: none; }
   .c-presenters__card p {
     margin: 8px 0 0;
     padding: 0; }

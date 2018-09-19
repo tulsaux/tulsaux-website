@@ -139,6 +139,18 @@ button.btn, input.btn  {
 }
 
 .btn--ghost-red {
+
+	&.disabled {
+		color: lighten($clr-2, 50%);
+		border-color: lighten($clr-2, 50%);
+		cursor: not-allowed;
+		&:hover {
+			color: lighten($clr-2, 50%);
+			border-color: lighten($clr-2, 50%);
+			background: none;
+		}
+	}
+
 	color: $clr-1;
 	border: 2px solid $clr-1;
 
@@ -147,6 +159,7 @@ button.btn, input.btn  {
 		color: $white;
 	}
 }
+
 
 
 .faqs-list {
@@ -332,6 +345,12 @@ button.btn, input.btn  {
 		a {
 			color: $clr-2;
 			text-decoration: none;
+			border-bottom: 1px dashed $clr-2;
+			transition: all 0.2s ease-out;
+			&:hover {
+				color: $clr-1;
+				border: none;
+			}
 		}
 	}
 
