@@ -15,7 +15,28 @@
   // iPhone X Detection
   if (iOS && screen.width == 1125 && screen.height === 2436) {
     document.body.className += ' ' + 'ios-safearea-exists';
-  } else {
-    console.log('no-notch');
   }
+
+  let indexCount = 1;
+  const loadMoreButton = document.querySelector(".js-loadMore");
+  const cardArr = document.querySelectorAll(".c-presenters__card");
+
+  var loadMoreSpeakers = function(){
+    indexCount++;
+    const activeCardArrCount = indexCount * 3;
+    if (activeCardArrCount >= cardArr.length){
+      loadMoreButton.classList.add("fadeOut");
+    }
+    for (var i = 0; i < activeCardArrCount; i++) {
+      // console.log(cardArr[i]);
+      cardArr[i].style.display = "block";
+    }
+  }
+
+  loadMoreButton.addEventListener("click", function(e){
+    e.preventDefault();
+    loadMoreSpeakers();
+  }, false);
+
+
 })();

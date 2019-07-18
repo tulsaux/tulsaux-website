@@ -145,6 +145,20 @@ input.btn {
 		background: $clr-2;
 		color: $white;
 	}
+
+	&.disabled {
+		background: none;
+		color: lighten($clr-2, 50%);
+		border-color: lighten($clr-2, 50%);
+		cursor: not-allowed;
+
+		&:hover {
+			color: lighten($clr-2, 50%);
+			border-color: lighten($clr-2, 50%);
+			background: none;
+		}
+	}
+
 }
 
 .btn--ghost-red {
@@ -293,15 +307,16 @@ input.btn {
 }
 
 .c-presenters__card {
-	&:nth-child(n + 4) {
-		display: none;
-	}
+	// &:nth-child(n + 4) {
+	// 	display: none;
+	// }
 	display: block;
 	text-align: left;
 	max-width: 500px;
 	margin-top: 2em;
 	margin-left: 0;
 	margin-right: 0;
+	padding-bottom: 1em;
 	border-bottom: 1px solid #EEE;
 
 	&:last-child {
@@ -380,4 +395,17 @@ input.btn {
 		margin-top: 16px;
 	}
 
+}
+
+.fadeOut {
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.2s ease-out all;
+}
+
+.wrapper-cardBtn {
+	padding-top: 1.5em;
+	@include mq-at-least(768px) {
+		padding-top: 0;
+	}
 }

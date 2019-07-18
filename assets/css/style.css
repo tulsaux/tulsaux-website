@@ -935,6 +935,17 @@ input.btn {
   background: #333;
   color: #fff;
 }
+.btn--red.disabled {
+  background: none;
+  color: #b3b3b3;
+  border-color: #b3b3b3;
+  cursor: not-allowed;
+}
+.btn--red.disabled:hover {
+  color: #b3b3b3;
+  border-color: #b3b3b3;
+  background: none;
+}
 
 .btn--ghost-red {
   color: #FF474A;
@@ -1072,10 +1083,8 @@ input.btn {
   margin-top: 2em;
   margin-left: 0;
   margin-right: 0;
+  padding-bottom: 1em;
   border-bottom: 1px solid #EEE;
-}
-.c-presenters__card:nth-child(n+4) {
-  display: none;
 }
 .c-presenters__card:last-child {
   border: none;
@@ -1141,6 +1150,21 @@ input.btn {
 }
 .c-presenters__card a {
   margin-top: 16px;
+}
+
+.fadeOut {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s ease-out all;
+}
+
+.wrapper-cardBtn {
+  padding-top: 1.5em;
+}
+@media screen and (min-width: 768px) {
+  .wrapper-cardBtn {
+    padding-top: 0;
+  }
 }
 
 header {
