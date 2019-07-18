@@ -28,7 +28,6 @@
       loadMoreButton.classList.add("fadeOut");
     }
     for (var i = 0; i < activeCardArrCount; i++) {
-      // console.log(cardArr[i]);
       cardArr[i].style.display = "block";
     }
     animateLoadMoreButton();
@@ -36,8 +35,6 @@
 
   var animateLoadMoreButton = function() {
     const loadMoreButtonIcon = document.querySelector(".js-loadMore svg");
-    console.log(loadMoreButtonIcon.classList);
-    console.log("animateLoadMoreButton");
     loadMoreButtonIcon.classList.toggle("fa-spin");
   }
 
