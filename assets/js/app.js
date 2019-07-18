@@ -31,11 +31,21 @@
       // console.log(cardArr[i]);
       cardArr[i].style.display = "block";
     }
+    animateLoadMoreButton();
+  }
+
+  var animateLoadMoreButton = function() {
+    const loadMoreButtonIcon = document.querySelector(".js-loadMore svg");
+    console.log(loadMoreButtonIcon.classList);
+    console.log("animateLoadMoreButton");
+    loadMoreButtonIcon.classList.toggle("fa-spin");
   }
 
   loadMoreButton.addEventListener("click", function(e){
     e.preventDefault();
-    loadMoreSpeakers();
+    animateLoadMoreButton();
+    setTimeout(loadMoreSpeakers, 2000);
+
   }, false);
 
 
