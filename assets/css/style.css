@@ -1167,6 +1167,72 @@ input.btn {
   }
 }
 
+.hidden {
+  display: none;
+}
+
+.hero-placeholder p {
+  max-width: 400px;
+  clear: both;
+}
+.hero-placeholder span {
+  height: 1em;
+  width: 20%;
+  display: inline-block;
+  margin-right: 1em;
+  background: #595959;
+  background: linear-gradient(270deg, #555555, #999999);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 4s ease infinite;
+  -moz-animation: AnimationName 4s ease infinite;
+  animation: AnimationName 4s ease infinite;
+}
+.hero-placeholder span + span {
+  width: 40%;
+}
+.hero-placeholder span + span + span {
+  width: 15%;
+}
+.hero-placeholder span + span + span + span {
+  width: 30%;
+}
+.hero-placeholder span + span + span + span + span {
+  width: 20%;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 header {
   position: relative;
   background: #FF474A;

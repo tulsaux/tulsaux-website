@@ -45,5 +45,31 @@
 
   }, false);
 
+window.setTimeout( ()=> {
+  const current = new Date();
+  const expiry = new Date(2020, 1, 13);
+  const expiry2 = new Date(2020, 2, 10);
+  const expiry3 = new Date(2020, 3, 14);
+
+
+  const eventInfoPlaceholder = document.getElementById("eventInfoPlaceholder");
+  const eventInfoFeb = document.getElementById("eventInfoFeb");
+  const eventInfoMar = document.getElementById("eventInfoMar");
+  const eventInfoApr = document.getElementById("eventInfoApr");
+  const eventInfoMay = document.getElementById("eventInfoMay");
+
+  if (current.getTime() > expiry3.getTime()) {
+    eventInfoMay.style.display = "block";
+  } else if (current.getTime() > expiry2.getTime()) {
+    eventInfoApr.style.display = "block";
+  } else if (current.getTime() > expiry.getTime()) {
+    eventInfoMar.style.display = "block";
+  } else {
+    eventInfoFeb.style.display = "block";
+  }
+
+  eventInfoPlaceholder.style.display = "none";
+}, 2000);
+
 
 })();
