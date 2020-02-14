@@ -1058,8 +1058,9 @@ input.btn {
     align-items: center;
   }
 }
-.c-sponsors__card__logo img {
+.c-sponsors__card__logo img, .c-sponsors__card__logo svg {
   max-width: 100%;
+  display: block;
 }
 
 .c-presenters {
@@ -1231,6 +1232,37 @@ input.btn {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #ff1418;
+  }
+
+  main {
+    background: #333;
+    color: #e6e6e6;
+  }
+
+  .btn--red:hover {
+    background: gray;
+    border-color: gray;
+  }
+
+  a:hover {
+    color: gray;
+  }
+
+  .faqs-list span {
+    color: #cccccc;
+  }
+  .faqs-list span a {
+    color: #cccccc;
+    text-decoration: underline;
+  }
+
+  .c-sponsors__card__logo svg {
+    fill: #e6e6e6;
   }
 }
 header {

@@ -286,9 +286,10 @@ input.btn {
 		align-items: center;
 	}
 
-	img {
+	img, svg {
 		// outline: 1px solid green;
 		max-width: 100%;
+		display: block;
 	}
 }
 
@@ -462,4 +463,34 @@ input.btn {
 	 0%{background-position:0% 50%}
 	 50%{background-position:100% 50%}
 	 100%{background-position:0% 50%}
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background: darken($clr-1, 10%);
+	}
+	main {
+		background: $clr-2;
+		color: darken($white, 10%);
+	}
+	.btn--red:hover {
+		background: darken($white, 50%);
+		border-color: darken($white, 50%);
+	}
+	a:hover {
+		color: darken($white, 50%);
+	}
+	.faqs-list {
+		span {
+			color: darken($white, 20%);
+			a {
+				color: darken($white, 20%);
+				text-decoration: underline;
+			}
+		}
+	}
+	.c-sponsors__card__logo svg {
+		fill: darken($white, 10%);
+	}
+
 }
