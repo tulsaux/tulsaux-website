@@ -1293,6 +1293,25 @@ header h1 span {
   color: #FF474A;
 }
 
+.alert {
+  background: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  line-height: 1.3em;
+}
+.alert br {
+  display: none;
+}
+@media screen and (min-width: 960px) {
+  .alert br {
+    display: block;
+  }
+}
+.alert a:hover {
+  color: #fff;
+}
+
 .newsletter-signup {
   background: url("../images/map-gray.svg") top center no-repeat #999 fixed;
   background-size: cover;

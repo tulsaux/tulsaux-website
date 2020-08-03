@@ -59,3 +59,20 @@ header {
 		}
 	}
 }
+
+.alert {
+	background: darken($clr-2, 10%);
+	color: $white;
+	text-align: center;
+	padding: 1em;
+	line-height: 1.3em;
+	br {
+		display: none;
+		@include mq-at-least(960px){
+			display: block;
+		}
+	}
+	a:hover {
+		color: $white;
+	}
+}
