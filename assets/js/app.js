@@ -70,15 +70,19 @@ window.setTimeout( ()=> {
   const eventInfoDec = document.getElementById("eventInfoDec");
   const eventInfoJan = document.getElementById("eventInfoJan");
 
+  console.log("getTime");
+
   if (current.getTime() > expiry9.getTime()) {
-  } else if (current.getTime() > expiry8.getTime()) {
-    eventInfoJan.style.display = "block";
-  } else if (current.getTime() > expiry7.getTime()) {
-    eventInfoDec.style.display = "block";
-  } else if (current.getTime() > expiry6.getTime()) {
-    eventInfoNov.style.display = "block";
+    console.log("expiry9");
   } else if (current.getTime() > expiry5.getTime()) {
-    eventInfoOct.style.display = "block";
+    console.log("expiry5");
+    eventInfoJan.style.display = "block";
+  // } else if (current.getTime() > expiry7.getTime()) {
+  //   eventInfoDec.style.display = "block";
+  // } else if (current.getTime() > expiry6.getTime()) {
+  //   eventInfoNov.style.display = "block";
+  // } else if (current.getTime() > expiry5.getTime()) {
+  //   eventInfoOct.style.display = "block";
   } else if (current.getTime() > expiry4.getTime()) {
     eventInfoSept.style.display = "block";
   } else if (current.getTime() > expiry3.getTime()) {
