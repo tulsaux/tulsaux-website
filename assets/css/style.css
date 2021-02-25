@@ -966,19 +966,22 @@ input.btn {
   color: #fff;
 }
 
+.faqs-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 .faqs-list li {
-  padding: 0 0 1em;
   font-weight: bold;
 }
 .faqs-list span {
   display: block;
-  color: #777;
-  padding: 0.5em 0 0;
+  color: #666;
+  padding: 0.25em 0 1.5rem;
   font-weight: normal;
 }
 .faqs-list span a {
-  color: #999;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .c-hero-event p {

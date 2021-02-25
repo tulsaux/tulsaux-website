@@ -46,6 +46,7 @@
   }, false);
 
 window.setTimeout( ()=> {
+  console.log("setTimeout");
   const current = new Date();
   const expiry = new Date(2020, 1, 13);
   const expiry2 = new Date(2020, 2, 10);
@@ -74,6 +75,7 @@ window.setTimeout( ()=> {
 
   if (current.getTime() > expiry9.getTime()) {
     console.log("expiry9");
+    eventInfoApr.style.display = "block";
   } else if (current.getTime() > expiry5.getTime()) {
     console.log("expiry5");
     eventInfoJan.style.display = "block";
@@ -92,11 +94,12 @@ window.setTimeout( ()=> {
   } else if (current.getTime() > expiry.getTime()) {
     eventInfoMar.style.display = "block";
   } else {
+    console.log("else");
     eventInfoFeb.style.display = "block";
   }
-
+  console.log("not-else");
   eventInfoPlaceholder.style.display = "none";
-}, 2000);
+}, 1000);
 
 
 })();
