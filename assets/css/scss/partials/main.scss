@@ -14,7 +14,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: $roboto-slab;
-	color: #FFFFFF;
+	color: $white;
 	line-height: 1.5em;
 }
 
@@ -74,7 +74,7 @@ section {
 
 	> .row {
 		padding-bottom: 8px;
-		border-bottom: 1px solid #EEE;
+		border-bottom: 1px solid $whiteDarker;
 		margin-bottom: 16px;
 	}
 
@@ -422,6 +422,7 @@ input.btn {
 		max-width: 400px;
 		clear: both;
 	}
+
 	span {
 		height: 1em;
 		width: 20%;
@@ -435,34 +436,110 @@ input.btn {
 		-moz-animation: AnimationName 4s ease infinite;
 		animation: AnimationName 4s ease infinite;
 	}
+
 	span + span {
 		width: 40%;
 	}
+
 	span + span + span {
-		width: 15%
+		width: 15%;
 	}
+
 	span + span + span + span {
-		width: 30%
+		width: 30%;
 	}
+
 	span + span + span + span + span {
-		width: 20%
+		width: 20%;
 	}
 }
-
-
 
 @-webkit-keyframes AnimationName {
-	 0%{background-position:0% 50%}
-	 50%{background-position:100% 50%}
-	 100%{background-position:0% 50%}
+	0% {
+		background-position: 0 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0 50%;
+	}
 }
 @-moz-keyframes AnimationName {
-	 0%{background-position:0% 50%}
-	 50%{background-position:100% 50%}
-	 100%{background-position:0% 50%}
+	0% {
+		background-position: 0 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0 50%;
+	}
 }
 @keyframes AnimationName {
-	 0%{background-position:0% 50%}
-	 50%{background-position:100% 50%}
-	 100%{background-position:0% 50%}
+	0% {
+		background-position: 0 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0 50%;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	main {
+		background: $clr-2;
+		color: $gray;
+	}
+
+	a:hover {
+		color: $grayLighter;
+	}
+
+	.btn--red {
+		&:hover {
+			border-color: $gray;
+			background: $gray;
+			color: $clr-2;
+		}
+
+		// &.disabled {
+		// 	&:hover {
+		// 		color: lighten($clr-2, 50%);
+		// 		border-color: lighten($clr-2, 50%);
+		// 		background: none;
+		// 	}
+		// }
+
+	}
+
+	.btn--ghost-red {
+		// &.disabled {
+		// 	&:hover {
+		// 		color: lighten($clr-2, 50%);
+		// 		border-color: lighten($clr-2, 50%);
+		// 		background: none;
+		// 	}
+		// }
+
+		&:hover {
+			background: $clr-1;
+			color: $white;
+		}
+	}
+	.faqs-list span {
+		color: $grayDarker;
+	}
+	.c-sponsors__card__logo img {
+		filter: grayscale(100%) invert(100%);
+		opacity: .8;
+	}
 }

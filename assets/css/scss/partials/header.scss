@@ -76,3 +76,16 @@ header {
 		color: $white;
 	}
 }
+
+@media (prefers-color-scheme: dark) {
+		.logo {
+			filter: invert(80%);
+		}
+		header h1 {
+			background-color: $clr-2;
+			color: $gray;
+		}
+		.alert {
+			color: $gray;
+		}
+}

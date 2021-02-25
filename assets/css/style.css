@@ -820,7 +820,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Roboto Slab", serif;
-  color: #FFFFFF;
+  color: #fff;
   line-height: 1.5em;
 }
 
@@ -874,7 +874,7 @@ section:last-child > .row {
 }
 section > .row {
   padding-bottom: 8px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid #f0f0f0;
   margin-bottom: 16px;
 }
 section h2 {
@@ -1205,35 +1205,65 @@ input.btn {
 
 @-webkit-keyframes AnimationName {
   0% {
-    background-position: 0% 50%;
+    background-position: 0 50%;
   }
   50% {
     background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 0 50%;
   }
 }
 @-moz-keyframes AnimationName {
   0% {
-    background-position: 0% 50%;
+    background-position: 0 50%;
   }
   50% {
     background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 0 50%;
   }
 }
 @keyframes AnimationName {
   0% {
-    background-position: 0% 50%;
+    background-position: 0 50%;
   }
   50% {
     background-position: 100% 50%;
   }
   100% {
-    background-position: 0% 50%;
+    background-position: 0 50%;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  main {
+    background: #333;
+    color: #ccc;
+  }
+
+  a:hover {
+    color: #eee;
+  }
+
+  .btn--red:hover {
+    border-color: #ccc;
+    background: #ccc;
+    color: #333;
+  }
+
+  .btn--ghost-red:hover {
+    background: #FF474A;
+    color: #fff;
+  }
+
+  .faqs-list span {
+    color: #999;
+  }
+
+  .c-sponsors__card__logo img {
+    filter: grayscale(100%) invert(100%);
+    opacity: 0.8;
   }
 }
 header {
@@ -1315,6 +1345,20 @@ header h1 span {
   color: #fff;
 }
 
+@media (prefers-color-scheme: dark) {
+  .logo {
+    filter: invert(80%);
+  }
+
+  header h1 {
+    background-color: #333;
+    color: #ccc;
+  }
+
+  .alert {
+    color: #ccc;
+  }
+}
 .newsletter-signup {
   background: url("../images/map-gray.svg") top center no-repeat #999 fixed;
   background-size: cover;
@@ -1446,6 +1490,11 @@ header h1 span {
   padding: 10px 0 0;
 }
 
+@media (prefers-color-scheme: dark) {
+  .newsletter-signup {
+    background-color: #555;
+  }
+}
 footer {
   background: #333;
   padding: 24px 16px;

@@ -130,3 +130,9 @@
 		padding: 10px 0 0;
 	}
 }
+
+@media (prefers-color-scheme: dark) {
+	.newsletter-signup {
+		background-color: $blackLighter;
+	}
+}
