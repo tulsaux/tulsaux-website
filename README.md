@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c601cceb-8179-4a84-908c-f0526c50ca70/deploy-status)](https://app.netlify.com/sites/maxxcrawford/deploys)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Tulsa UX Website
