@@ -75,28 +75,29 @@ window.setTimeout( ()=> {
 
   if (current.getTime() > expiry9.getTime()) {
     console.log("expiry9");
-    eventInfoApr.style.display = "block";
-  } else if (current.getTime() > expiry5.getTime()) {
-    console.log("expiry5");
-    eventInfoJan.style.display = "block";
-  // } else if (current.getTime() > expiry7.getTime()) {
-  //   eventInfoDec.style.display = "block";
-  // } else if (current.getTime() > expiry6.getTime()) {
-  //   eventInfoNov.style.display = "block";
-  // } else if (current.getTime() > expiry5.getTime()) {
-  //   eventInfoOct.style.display = "block";
-  } else if (current.getTime() > expiry4.getTime()) {
-    eventInfoSept.style.display = "block";
-  } else if (current.getTime() > expiry3.getTime()) {
-    eventInfoAug.style.display = "block";
-  } else if (current.getTime() > expiry2.getTime()) {
-    eventInfoApr.style.display = "block";
-  } else if (current.getTime() > expiry.getTime()) {
-    eventInfoMar.style.display = "block";
-  } else {
-    console.log("else");
-    eventInfoFeb.style.display = "block";
+    eventInfoMay.style.display = "block";
   }
+  // } else if (current.getTime() > expiry5.getTime()) {
+  //   console.log("expiry5");
+  //   eventInfoJan.style.display = "block";
+  // // } else if (current.getTime() > expiry7.getTime()) {
+  // //   eventInfoDec.style.display = "block";
+  // // } else if (current.getTime() > expiry6.getTime()) {
+  // //   eventInfoNov.style.display = "block";
+  // // } else if (current.getTime() > expiry5.getTime()) {
+  // //   eventInfoOct.style.display = "block";
+  // } else if (current.getTime() > expiry4.getTime()) {
+  //   eventInfoSept.style.display = "block";
+  // } else if (current.getTime() > expiry3.getTime()) {
+  //   eventInfoAug.style.display = "block";
+  // } else if (current.getTime() > expiry2.getTime()) {
+  //   eventInfoApr.style.display = "block";
+  // } else if (current.getTime() > expiry.getTime()) {
+  //   eventInfoMar.style.display = "block";
+  // } else {
+  //   console.log("else");
+  //   eventInfoFeb.style.display = "block";
+  // }
   console.log("not-else");
   eventInfoPlaceholder.style.display = "none";
 }, 1000);
