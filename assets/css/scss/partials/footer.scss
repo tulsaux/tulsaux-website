@@ -75,12 +75,25 @@ footer {
 	}
 }
 
+.c-footer__links {
+	text-align: center;
+	p {
+		padding-top: 0;
+		margin-top: 0;
+	}
+	@include mq-at-least(600px) {
+		text-align: left;
+	}
+}
+
 .c-footer__copyright {
 	margin-top: 1em;
 	text-align: center;
 
 	a {
+		display: block;
 		color: lighten($clr-2, 35%);
+		margin-bottom: 0.5rem;
 
 		&:hover {
 			color: lighten($clr-2, 45%);

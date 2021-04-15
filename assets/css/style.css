@@ -1563,12 +1563,27 @@ footer {
   }
 }
 
+.c-footer__links {
+  text-align: center;
+}
+.c-footer__links p {
+  padding-top: 0;
+  margin-top: 0;
+}
+@media screen and (min-width: 600px) {
+  .c-footer__links {
+    text-align: left;
+  }
+}
+
 .c-footer__copyright {
   margin-top: 1em;
   text-align: center;
 }
 .c-footer__copyright a {
+  display: block;
   color: #8c8c8c;
+  margin-bottom: 0.5rem;
 }
 .c-footer__copyright a:hover {
   color: #a6a6a6;
