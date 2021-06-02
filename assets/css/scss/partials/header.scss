@@ -75,6 +75,11 @@ header {
 	a:hover {
 		color: $white;
 	}
+	.wrapper {
+		@extend %wrapper;
+		// max-width: 800px;
+		// margin: 0 auto;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
