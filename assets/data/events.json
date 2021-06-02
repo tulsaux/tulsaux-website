@@ -1,0 +1,47 @@
+{
+  "events": [
+    {
+      "date": "2021-05-26",
+      "month": "May",
+      "day": "26th",
+      "meetupId": "277467230",
+      "time": "6:30 PM",
+      "speaker": "Dean Schuster",
+      "title": "Why UX Matters: The Chips & Pickle Story",
+      "url": "https://www.meetup.com/Tulsa-UX-User-Group/events/277467230/"
+    },
+    {
+      "date": "2021-06-08",
+      "month": "June",
+      "day": "8th",
+      "meetupId": "277467230",
+      "time": "6:30 PM",
+      "speaker": "Dean Schuster",
+      "title": "Why UX Matters: The Chips & Pickle Story",
+      "url": "https://www.meetup.com/Tulsa-UX-User-Group/events/277467230/",
+      "description": "why the smallest user experience decisions are enormously important."
+    },
+    {
+      "date": "2021-07-13",
+      "month": "July",
+      "day": "13th",
+      "meetupId": "278105162",
+      "time": "6:30 PM",
+      "speaker": "Sarah Hoaglan",
+      "title": "Navigating UX Burnout",
+      "url": "https://www.meetup.com/Tulsa-UX-User-Group/events/278105162/",
+      "description": "the human-centered conversation between UX and mental health and discuss strategies for overcoming your own burnout journey so that you can continue to have a meaningful career"
+    },
+    {
+      "date": "2021-08-10",
+      "month": "August",
+      "day": "10th",
+      "meetupId": "277467471",
+      "time": "6:30 PM",
+      "speaker": "Jen Blatz",
+      "title": "The Rose, Bud and Thorn Research Method",
+      "url": "https://www.meetup.com/Tulsa-UX-User-Group/events/277467471/",
+      "description": ""
+    }
+  ]
+}
