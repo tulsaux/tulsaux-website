@@ -67,13 +67,15 @@ function buildEventData(data) {
 
       let speakerCopy = "This month’s speaker is " + event.speaker + ". "; 
 
-      if (event.description) {
-              speakerCopy += "Their talk, “"  + event.title + "” will cover " + event.description;
-      } else {
+      if (event.title && event.description) {
+        speakerCopy += "Their talk, “"  + event.title + "” will cover " + event.description;
+      } else if ( event.title && !event.description ) {
         speakerCopy += "They will give their talk, “"  + event.title + "”.";
+      } else if ( event.bio ) {
+        speakerCopy += event.bio;
+      } else {
+        speakerCopy = speakerCopy;
       }
-      
-      
 
       eventTemplateSpeakerTitle.textContent = speakerCopy;
       eventTemplateDate.textContent = event.month + " " + event.day;
