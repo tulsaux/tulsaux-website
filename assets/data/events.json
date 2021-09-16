@@ -54,6 +54,18 @@
       "title": "",
       "url": "https://www.meetup.com/Tulsa-UX-User-Group/events/280051285/",
       "description": "Eduardo is a a Product Design Lead for the Security & Privacy team at Mozilla."
+    },
+    {
+      "date": "2021-10-12",
+      "month": "October",
+      "day": "12th",
+      "meetupId": "280806950",
+      "time": "6:30 PM",
+      "speaker": "8th Semiannual Lightning Talks",
+      "title": "",
+      "url": "https://www.meetup.com/Tulsa-UX-User-Group/events/280806950/",
+      "description": "Each talk with 5-10 minutes with a brief Q&A afterwards. Sign up to give a lightning talk at ",
+      "meetupType": "lightning"
     }
   ]
 }

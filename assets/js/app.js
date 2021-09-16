@@ -67,7 +67,10 @@ function buildEventData(data) {
 
       let speakerCopy = "This month’s speaker is " + event.speaker + ". "; 
 
-      if (event.title && event.description) {
+      
+      if (event.meetupType == "lightning") {
+        speakerCopy = "This meetup is Tulsa UX's eighth semiannual lightning talks. " + event.description; 
+      } else if (event.title && event.description) {
         speakerCopy += "Their talk, “"  + event.title + "” will cover " + event.description;
       } else if ( event.title && !event.description ) {
         speakerCopy += "They will give their talk, “"  + event.title + "”.";
@@ -78,6 +81,14 @@ function buildEventData(data) {
       }
 
       eventTemplateSpeakerTitle.textContent = speakerCopy;
+
+      if (event.meetupType == "lightning") {
+        const speakerSignUpLink = document.createElement("a");
+        speakerSignUpLink.href = "https://tulsaux.com/lightning";
+        speakerSignUpLink.textContent = "https://tulsaux.com/lightning";
+        eventTemplateSpeakerTitle.appendChild(speakerSignUpLink);
+      }
+
       eventTemplateDate.textContent = event.month + " " + event.day;
       eventTemplateLink.href = event.url;
       eventTemplate.classList.remove("hidden");
