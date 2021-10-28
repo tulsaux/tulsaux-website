@@ -66,6 +66,17 @@
       "url": "https://www.meetup.com/Tulsa-UX-User-Group/events/280806950/",
       "description": "Each talk is 5-10 minutes with a brief Q&A afterwards. Sign up to give a lightning talk at ",
       "meetupType": "lightning"
+    },
+    {
+      "date": "2021-11-09",
+      "month": "November",
+      "day": "9th",
+      "meetupId": "281716790",
+      "time": "6:30 PM",
+      "speaker": "Jason Mathew",
+      "title": "",
+      "url": "https://www.meetup.com/Tulsa-UX-User-Group/events/280806950/",
+      "description": "Jason is a Product Manager at IBM, focused on Go To Market strategy for their Automation business."
     }
   ]
 }
