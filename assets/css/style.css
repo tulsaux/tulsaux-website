@@ -890,6 +890,10 @@ section p {
   padding: 0 0 16px;
 }
 
+.row {
+  max-width: 768px;
+}
+
 .btn {
   border-radius: 5px;
   padding: 8px 0;

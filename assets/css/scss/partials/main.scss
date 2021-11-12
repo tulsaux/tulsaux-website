@@ -98,6 +98,7 @@ section {
 
 .row {
 	@extend %wrapper;
+	max-width: 768px;
 }
 
 .btn {
