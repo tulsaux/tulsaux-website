@@ -70,6 +70,8 @@ function buildEventData(data) {
       
       if (event.meetupType == "lightning") {
         speakerCopy = "This meetup is Tulsa UX's eighth semiannual lightning talks. " + event.description; 
+      } else if (event.meetupType == "noSpeaker") {
+        speakerCopy = event.description; 
       } else if (event.title && event.description) {
         speakerCopy += "Their talk, “"  + event.title + "” will cover " + event.description;
       } else if ( event.title && !event.description ) {

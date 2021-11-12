@@ -75,8 +75,20 @@
       "time": "6:30 PM",
       "speaker": "Jason Mathew",
       "title": "",
-      "url": "https://www.meetup.com/Tulsa-UX-User-Group/events/280806950/",
+      "url": "https://www.meetup.com/Tulsa-UX-User-Group/events/281716790/",
       "description": "Jason is a Product Manager at IBM, focused on Go To Market strategy for their Automation business."
+    },
+    {
+      "date": "2022-01-11",
+      "month": "January",
+      "day": "11th",
+      "meetupId": "282018454",
+      "time": "6:30 PM",
+      "speaker": "Resume Roundup",
+      "title": "",
+      "url": "https://www.meetup.com/Tulsa-UX-User-Group/events/282018454/",
+      "description": "Our first meetup of 2022 is our 3rd Annual Resume Roundup! Bring your resume/CV to this meetup and have industry professionals and recruiters review and offer improvements.",
+      "meetupType": "noSpeaker"
     }
   ]
 }
