@@ -76,6 +76,8 @@ function buildEventData(data) {
         speakerCopy += "Their talk, “"  + event.title + "” will cover " + event.description;
       } else if ( event.title && !event.description ) {
         speakerCopy += "They will give their talk, “"  + event.title + "”.";
+      } else if ( !event.title && event.description ) {
+        speakerCopy += event.description;
       } else if ( event.bio ) {
         speakerCopy += event.bio;
       } else {

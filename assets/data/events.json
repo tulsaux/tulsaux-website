@@ -89,6 +89,17 @@
       "url": "https://www.meetup.com/Tulsa-UX-User-Group/events/282018454/",
       "description": "Our first meetup of 2022 is our 3rd Annual Resume Roundup! Bring your resume/CV to this meetup and have industry professionals and recruiters review and offer improvements.",
       "meetupType": "noSpeaker"
+    },
+    {
+      "date": "2022-02-08",
+      "month": "February",
+      "day": "8th",
+      "meetupId": "283184996",
+      "time": "6:30 PM",
+      "speaker": "Jonathan Van Risseghem",
+      "title": "",
+      "url": "https://www.meetup.com/Tulsa-UX-User-Group/events/283184996/",
+      "description": "Jonathan is Design Lead at Dotdash Meredith, an American digital media company."
     }
   ]
 }
