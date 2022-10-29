@@ -111,6 +111,54 @@
       "title": "Design Leadership: is it for me?",
       "url": "https://www.meetup.com/Tulsa-UX-User-Group/events/283204083/",
       "description": "the career path for leadership vs individual contributors and what designers should consider if they are thinking about going down the leader path. Cari is a Product Design Manager at Paylocity, a HR & Payroll provider."
+    },
+    {
+      "date": "2022-11-08",
+      "month": "November",
+      "day": "8th",
+      "meetupId": "289417315",
+      "time": "6:30 PM",
+      "speaker": "",
+      "title": "",
+      "url": "https://www.meetup.com/Tulsa-UX-User-Group/events/289417315/",
+      "description": "",
+      "meetupType": "noSpeaker"
+    },
+    {
+      "date": "2023-01-10",
+      "month": "January",
+      "day": "10th",
+      "meetupId": "289417335",
+      "time": "6:30 PM",
+      "speaker": "Resume Roundup",
+      "title": "",
+      "url": "https://www.meetup.com/Tulsa-UX-User-Group/events/289417335/",
+      "description": "Our first meetup of 2022 is our 4th Annual Resume Roundup! Bring your resume/CV to this meetup and have industry professionals and recruiters review and offer improvements.",
+      "meetupType": "noSpeaker"
+    },
+    {
+      "date": "2023-03-14",
+      "month": "March",
+      "day": "14th",
+      "meetupId": "289417420",
+      "time": "6:30 PM",
+      "speaker": "",
+      "title": "9th",
+      "url": "https://www.meetup.com/Tulsa-UX-User-Group/events/289417420/",
+      "description": "Each talk is 5-10 minutes with a brief Q&A afterwards. Sign up to give a lightning talk at ",
+      "meetupType": "lightning"
+    },
+    {
+      "date": "2023-05-09",
+      "month": "May",
+      "day": "9th",
+      "meetupId": "289417427",
+      "time": "6:30 PM",
+      "speaker": "",
+      "title": "",
+      "url": "https://www.meetup.com/Tulsa-UX-User-Group/events/289417427/",
+      "description": "",
+      "meetupType": "noSpeaker"
     }
   ]
 }

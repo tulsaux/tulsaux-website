@@ -54,7 +54,7 @@
   }
 
 function buildEventData(data) {
-  console.log("buildEventData: ", data);
+  // console.log("buildEventData: ", data);
 
   const eventTemplate = document.querySelector(".js-event-template");
   const eventTemplateSpeakerTitle = eventTemplate.querySelector(".js-data-speaker-title");
@@ -67,9 +67,10 @@ function buildEventData(data) {
 
       let speakerCopy = "This month’s speaker is " + event.speaker + ". "; 
 
-      
+
       if (event.meetupType == "lightning") {
-        speakerCopy = "This meetup is Tulsa UX's eighth semiannual lightning talks. " + event.description; 
+        // console.log("lightning")
+        speakerCopy = `This meetup is Tulsa UX's ${event.title} semiannual lightning talks. ${event.description}`;
       } else if (event.meetupType == "noSpeaker") {
         speakerCopy = event.description; 
       } else if (event.title && event.description) {
@@ -95,14 +96,11 @@ function buildEventData(data) {
 
       eventTemplateDate.textContent = event.month + " " + event.day;
       eventTemplateLink.href = event.url;
+      
       eventTemplate.classList.remove("hidden");
       return;
-    }    
+    }
   }
-
-  console.log(eventTemplate);
-
-  // 
 
 };
 
