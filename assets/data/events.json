@@ -171,6 +171,18 @@
       "url": "https://www.meetup.com/Tulsa-UX-User-Group/events/293493808/",
       "description": "SPECIAL MIXER EVENT with Tulsa Web Devs",
       "meetupType": "noSpeaker"
+    },
+    {
+      "date": "2023-11-13",
+      "month": "November",
+      "day": "14th",
+      "meetupId": "297265305",
+      "time": "6:30 PM",
+      "speaker": "",
+      "title": "",
+      "url": "https://www.meetup.com/Tulsa-UX-User-Group/events/297265305/",
+      "description": "",
+      "meetupType": "noSpeaker"
     }
   ]
 }
