@@ -195,6 +195,18 @@
       "url": "https://www.meetup.com/Tulsa-UX-User-Group/events/297265257/",
       "description": "Our first meetup of 2024 is our 5th Annual Resume Roundup! Bring your resume/CV to this meetup and have industry professionals and recruiters review and offer improvements.",
       "meetupType": "noSpeaker"
+    },
+    {
+      "date": "2024-03-12",
+      "month": "March",
+      "day": "12th",
+      "meetupId": "298461980",
+      "time": "6:30 PM",
+      "speaker": "",
+      "title": "",
+      "url": "https://www.meetup.com/tulsa-ux-user-group/events/298461980",
+      "description": "Each talk is 5-10 minutes with a brief Q&A afterwards. Sign up to give a lightning talk at ",
+      "meetupType": "lightning"
     }
   ]
 }
