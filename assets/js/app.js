@@ -71,7 +71,9 @@ function buildEventData(data) {
       if (event.meetupType == "lightning") {
         // console.log("lightning")
         speakerCopy = `This meetup is Tulsa UX's ${event.title} semiannual lightning talks. ${event.description}`;
-      } else if (event.meetupType == "noSpeaker") {
+      } else if (event.meetupType == "noSpeaker" && event.title && event.description) {
+        speakerCopy = `${event.title}: ${event.description}` 
+      } else if (event.meetupType == "noSpeaker" && !event.title) {
         speakerCopy = event.description; 
       } else if (event.title && event.description) {
         speakerCopy += "Their talk, “"  + event.title + "” will cover " + event.description;

@@ -207,6 +207,18 @@
       "url": "https://www.meetup.com/tulsa-ux-user-group/events/298462687",
       "description": "Each talk is 5-10 minutes with a brief Q&A afterwards. Sign up to give a lightning talk at ",
       "meetupType": "lightning"
+    },
+    {
+      "date": "2024-06-11",
+      "month": "June",
+      "day": "11th",
+      "meetupId": "301505811",
+      "time": "6:00 PM",
+      "speaker": "",
+      "title": "",
+      "url": "https://www.meetup.com/tulsa-ux-user-group/events/301505811",
+      "description": "Come learn about all the local Techlahoma usergroups and meet other Techlahoma members",
+      "meetupType": "noSpeaker"
     }
   ]
 }
