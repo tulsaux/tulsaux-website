@@ -231,6 +231,18 @@
       "url": "https://www.meetup.com/tulsa-ux-user-group/events/301783546",
       "description": "how mis/disinformation impacts user behavior",
       "meetupType": ""
+    },
+    {
+      "date": "2024-11-12",
+      "month": "November",
+      "day": "12th",
+      "meetupId": "304064977",
+      "time": "6:00 PM",
+      "speaker": "Paper Prototyping Exercises",
+      "title": "Paper Prototyping Exercises",
+      "url": "https://www.meetup.com/tulsa-ux-user-group/events/304064977",
+      "description": "This month's meetup will be hands-on! We'll split into groups and create UI prototypes with provided grid paper. There will a prompt shared with different requirements and you'll work as a team to create an app.",
+      "meetupType": "noSpeaker"
     }
   ]
 }
