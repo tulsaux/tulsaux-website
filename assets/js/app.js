@@ -19,23 +19,23 @@
 
   let indexCount = 1;
   const loadMoreButton = document.querySelector(".js-loadMore");
-  const cardArr = document.querySelectorAll(".c-presenters__card");
+  const cardArr = Array.from(document.querySelectorAll(".speaker-card"));
 
   var loadMoreSpeakers = function(){
     indexCount++;
     const activeCardArrCount = indexCount * 3;
     if (activeCardArrCount >= cardArr.length){
-      loadMoreButton.classList.add("fadeOut");
+      loadMoreButton.classList.add("invisible", "opacity-0");
     }
-    for (var i = 0; i < activeCardArrCount; i++) {
-      cardArr[i].style.display = "block";
+    for (const card of cardArr.slice(0, activeCardArrCount)) {
+      card.classList.remove("hidden");
     }
     animateLoadMoreButton();
   }
 
   var animateLoadMoreButton = function() {
-    const loadMoreButtonIcon = document.querySelector(".js-loadMore svg");
-    loadMoreButtonIcon.classList.toggle("fa-spin");
+    const loadMoreButtonIcon = loadMoreButton.querySelector("svg, i");
+    loadMoreButtonIcon?.classList.toggle("fa-spin");
   }
 
   loadMoreButton.addEventListener("click", function(e){
@@ -165,7 +165,7 @@ window.setTimeout( ()=> {
   //   eventInfoFeb.style.display = "block";
   // }
   // console.log("not-else");
-  eventInfoPlaceholder.style.display = "none";
+  document.getElementById("eventInfoPlaceholder").classList.add("hidden");
 }, 1000);
 
 })();

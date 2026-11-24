@@ -6,20 +6,34 @@ Website for TulsaUX.com
 
 > Tulsa UX meets once a month to discuss the latest UX/UI trends, hear from industry professionals in our community and discuss best HCD practices!
 
-## Compile SASS
+## Local development
 
-1. Make sure you have SASS installed.
+With Node.js 20.19+ or 22.12+, run:
 
-        $ sass -v
+```sh
+npm ci
+npm run dev
+```
 
-2. If you don't, install it here: [http://sass-lang.com/install](http://sass-lang.com/install)
+Open http://localhost:5173. Vite updates the page as you edit HTML, JavaScript, or Tailwind styles.
 
-3. Once installed, navigate to the CSS directory:
+## Production build
 
-        $ cd assets/css
+```sh
+npm run build
+```
 
-4. Run the following command to compile/watch the SCSS directory for changes.
+Vite writes the static site to `dist/`, which Netlify publishes. Edit event data in `public/assets/data/events.json`.
 
-        $ sass --watch scss/style.scss:style.css
+## Tests
 
-*Note that this does not live reload the project.*
+Run `npm test` to build the site and check its bundled CSS and JavaScript, local assets, event data, and Netlify deployment files. GitHub Actions runs the same checks on pull requests and pushes to `main`.
+
+Run the accessibility scans in Chromium with axe's WCAG 2.2 A and AA rules:
+
+```sh
+npx playwright install --only-shell chromium
+npm run a11y
+```
+
+The scans run against the production build at mobile and desktop widths in light and dark mode. GitHub Actions runs them alongside the smoke tests.

@@ -1,0 +1,30 @@
+{
+  "name": "tulsaux-website",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "npm run build && node --test",
+    "a11y": "npm run build && playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tulsaux/tulsaux-website.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tulsaux/tulsaux-website/issues"
+  },
+  "homepage": "https://github.com/tulsaux/tulsaux-website#readme",
+  "private": true,
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.1",
+    "@playwright/test": "^1.65.1",
+    "@tailwindcss/vite": "^4.3.5",
+    "tailwindcss": "^4.3.5",
+    "vite": "^8.3.8"
+  }
+}
