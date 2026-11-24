@@ -296,6 +296,13 @@ input.btn {
 	}
 }
 
+.c-sponsors__card__logo--gitwit {
+	width: 216px;
+	height: auto;
+	margin-inline: auto;
+	filter: brightness(.28);
+}
+
 .c-presenters {
 	@extend %clearfix;
 	margin: 0 auto;
@@ -542,5 +549,10 @@ input.btn {
 	.c-sponsors__card__logo img {
 		filter: grayscale(100%) invert(100%);
 		opacity: .8;
+
+		&.c-sponsors__card__logo--gitwit {
+			filter: none;
+			opacity: 1;
+		}
 	}
 }
