@@ -1,0 +1,24 @@
+{
+  "name": "tulsaux-website",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tulsaux/tulsaux-website.git"
+  },
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/tulsaux/tulsaux-website/issues"
+  },
+  "homepage": "https://github.com/tulsaux/tulsaux-website#readme",
+  "private": true,
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "devDependencies": {
+    "vite": "^8.3.8"
+  }
+}

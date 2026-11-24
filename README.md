@@ -6,6 +6,17 @@ Website for TulsaUX.com
 
 > Tulsa UX meets once a month to discuss the latest UX/UI trends, hear from industry professionals in our community and discuss best HCD practices!
 
+## Local development
+
+With Node.js 20.19 or 22.12 and newer, run:
+
+```sh
+npm ci
+npm run dev
+```
+
+Open http://localhost:5173. Vite reloads the page when HTML changes and updates the stylesheet in the browser when the compiled CSS changes.
+
 ## Compile SASS
 
 1. Make sure you have SASS installed.
@@ -22,4 +33,4 @@ Website for TulsaUX.com
 
         $ sass --watch scss/style.scss:style.css
 
-*Note that this does not live reload the project.*
+Run the Sass watcher alongside `npm run dev` when editing SCSS.
