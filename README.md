@@ -28,3 +28,12 @@ Vite writes the static site to `dist/`, which Netlify publishes. Edit event data
 ## Tests
 
 Run `npm test` to build the site and check its bundled CSS and JavaScript, local assets, event data, and Netlify deployment files. GitHub Actions runs the same checks on pull requests and pushes to `main`.
+
+Run the accessibility scans in Chromium with axe's WCAG 2.2 A and AA rules:
+
+```sh
+npx playwright install --only-shell chromium
+npm run a11y
+```
+
+The scans run against the production build at mobile and desktop widths in light and dark mode. GitHub Actions runs them alongside the smoke tests.
