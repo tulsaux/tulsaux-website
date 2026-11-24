@@ -4,6 +4,8 @@
 
 @theme {
   --color-brand: #ff474a;
+  --color-brand-ink: #cd292e;
+  --color-brand-light: #ff7275;
   --color-charcoal: #333;
   --color-silver: #ccc;
   --font-body: "Roboto Slab", serif;
@@ -25,7 +27,7 @@
   }
 
   a {
-    @apply text-brand underline hover:text-charcoal dark:hover:text-[#eee];
+    @apply text-brand-ink underline hover:text-charcoal dark:text-brand-light dark:hover:text-[#eee];
   }
 
   svg {
@@ -72,12 +74,13 @@
   }
 
   .btn--red {
-    @apply border-2 border-brand bg-brand text-white hover:border-charcoal hover:bg-charcoal hover:text-white
+    @apply border-2 border-brand-ink bg-brand-ink text-white hover:border-charcoal hover:bg-charcoal hover:text-white
       dark:hover:border-silver dark:hover:bg-silver dark:hover:text-charcoal;
   }
 
   .btn--ghost-red {
-    @apply border-2 border-brand text-brand hover:bg-brand hover:text-white;
+    @apply border-2 border-brand-ink text-brand-ink hover:bg-brand-ink hover:text-white
+      dark:border-brand-light dark:text-brand-light dark:hover:border-brand-ink dark:hover:text-white;
   }
 
   .btn.disabled {
@@ -93,7 +96,7 @@
     }
 
     a {
-      @apply text-[1.5em] no-underline transition-colors duration-200 ease-[ease] dark:hover:text-charcoal;
+      @apply text-[1.5em] no-underline transition-colors duration-200 ease-[ease];
     }
   }
 
@@ -149,7 +152,7 @@
     @apply font-bold;
 
     span {
-      @apply block pt-1 pb-6 font-normal text-[#666] dark:text-[#999];
+      @apply block pt-1 pb-6 font-normal text-[#666] dark:text-neutral-400;
     }
   }
 
