@@ -30,23 +30,23 @@
 </head>
 
 <body>
-    <div class="alert">
-      <div class="wrapper" style="max-width: 800px;">
+    <div class="bg-[#1a1a1a] p-4 text-center leading-[1.3] dark:text-silver [&_a:hover]:text-white">
+      <div class="content-wrapper max-w-[800px]">
         Attention! Our meetups are hybrid (both in-person and virtually). All in-person events will follow all venue safety guidelines. Please RSVP to our latest <a href="https://www.meetup.com/Tulsa-UX-User-Group/events/">Meetup event</a> to receive video call-in&nbsp;info.
       </div>
     </div>
-    <header>
-        <img class="logo logo--horz" src="/assets/images/logo-horizontal.svg" alt="Tulsa UX" />
-        <img class="logo logo--vert" src="/assets/images/logo-vertical.svg" alt="Tulsa UX" />
-        <h1>User&nbsp;Experience <span>User&nbsp;Group</span></h1>
+    <header class="relative overflow-hidden bg-brand bg-[url(/assets/images/map.svg)] bg-cover bg-fixed bg-top bg-no-repeat px-8 py-12">
+        <img class="mx-auto hidden max-w-lg dark:invert-80 min-[600px]:block" src="/assets/images/logo-horizontal.svg" alt="Tulsa UX" />
+        <img class="mx-auto block max-w-lg dark:invert-80 min-[600px]:hidden" src="/assets/images/logo-vertical.svg" alt="Tulsa UX" />
+        <h1 class="mx-auto mt-8 max-w-lg bg-white px-4 py-2 text-center text-[0.8em] leading-none font-bold tracking-[2px] text-charcoal uppercase min-[350px]:text-[1em] min-[600px]:text-[1.5em] dark:bg-charcoal dark:text-silver">User&nbsp;Experience <span class="text-brand">User&nbsp;Group</span></h1>
     </header>
-    <main>
+    <main class="bg-white py-8 text-charcoal dark:bg-charcoal dark:text-silver">
         <section>
-            <div class="row">
-                <div class="col c-hero-event">
+            <div class="content-wrapper section-content">
+                <div>
                     <h2><i class="far fa-calendar-alt"></i> Next Meetup</h2>
                     <div id="eventInfoPlaceholder" class="hero-placeholder">
-                      <p>
+                      <p class="max-w-[400px]">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -68,8 +68,8 @@
             </div>
         </section>
         <section>
-            <div class="row">
-                <div class="col">
+            <div class="content-wrapper section-content">
+                <div>
                     <h2><i class="far fa-map-signs"></i> About</h2>
                     <p>Tulsa UX meets the second Tuesday each month to learn about the latest trends, hear from industry professionals in our community and discuss best practices!. 
                     <!-- We normally meet at <a href="http://www.36degreesnorth.co/">36&deg;North Co-working Space</a> but <strong>are meeting virtually until further notice.</strong>  -->
@@ -78,11 +78,11 @@
             </div>
         </section>
         <section class="hidden">
-            <div class="row">
-                <div class="col">
+            <div class="content-wrapper section-content">
+                <div>
                     <h2><i class="far fa-map"></i> Previous Speakers</h2>
-                    <ul class="c-presenters">
-                      <li class="c-presenters__card">
+                    <ul class="speaker-list">
+                      <li class="speaker-card">
                         <time>July 9, 2019</time>
                         <h2>Ian Russell </h2>
                         <h3>Accessibility and Usability for&nbsp;All</h3>
@@ -90,7 +90,7 @@
                         <p>Ian discussed ADA compliance and the tools used to help identify inaccessible areas. </p>
                         <!-- <a class="btn btn--ghost-red disabled" target="_blank" href="#">Recap Unavailable</a> -->
                       </li>
-                      <li class="c-presenters__card">
+                      <li class="speaker-card">
                         <time>June 11, 2019</time>
                         <h2>Karina Buvaylik </h2>
                         <h3>Growing Agency UX with a Small&nbsp;Team</h3>
@@ -98,7 +98,7 @@
                         <p>She outlined the daily challenges (and solutions) that a small, growing UX team tackles.</p>
                         <!-- <a class="btn btn--ghost-red disabled" target="_blank" href="#">Recap Unavailable</a> -->
                       </li>
-                      <li class="c-presenters__card">
+                      <li class="speaker-card">
                         <time>May 14, 2019</time>
                         <h2>Sam Carlton </h2>
                         <h3>How to Build a Website That Designs Itself</h3>
@@ -106,7 +106,7 @@
                         <p>Presented about how AI can be used to generate websites that design themselves.</p>
                         <!-- <a class="btn btn--ghost-red disabled" target="_blank" href="#">Recap Unavailable</a> -->
                       </li>
-                      <li class="c-presenters__card" style="display:none;">
+                      <li class="speaker-card hidden">
                         <time>January 8, 2018</time>
                         <h2>Maxx Crawford </h2>
                         <h3>History of Video Game UX</h3>
@@ -114,7 +114,7 @@
                         <p>Presented how videos games – from Pong to the latest console release – handle common UX problems. No quarters necessary.</p>
                         <!-- <a class="btn btn--ghost-red disabled" target="_blank" href="#">Recap Unavailable</a> -->
                       </li>
-                      <li class="c-presenters__card" style="display:none;">
+                      <li class="speaker-card hidden">
                         <time>September 11, 2018</time>
                         <h2>Ryan Hulseberg </h2>
                         <h3>Enterprise UX Design</h3>
@@ -122,7 +122,7 @@
                         <p>We discussed how the OU design team has approached the multitude of user experience problems for students and faculty.</p>
                         <!-- <a class="btn btn--ghost-red disabled" target="_blank" href="#">Recap Unavailable</a> -->
                       </li>
-                      <li class="c-presenters__card" style="display:none;">
+                      <li class="speaker-card hidden">
                         <time>August 14, 2018</time>
                         <h2>Brendan Hill</h2>
                         <h3>Design Sprints 2.0</h3>
@@ -130,7 +130,7 @@
                         <p>A brief overview of design sprints and then had attendees participate in a live group demonstration of some of the DS practices.</p>
                         <!-- <a class="btn btn--ghost-red disabled" target="_blank" href="#">Recap Unavailable</a> -->
                       </li>
-                      <li class="c-presenters__card" style="display:none;">
+                      <li class="speaker-card hidden">
                         <time>July 10, 2018</time>
                         <h2>Group Discussion</h2>
                         <h3>User Forum</h3>
@@ -138,7 +138,7 @@
                         <p>We discussed the first year of Tulsa UX over cake and what changes we want to see for the next year.</p>
                         <!-- <a class="btn btn--ghost-red" target="_blank" href="https://medium.com/tulsa-ux/july-meetup-recap-dcfa128d380f">View Recap</a> -->
                       </li>
-                      <li class="c-presenters__card" style="display:none;">
+                      <li class="speaker-card hidden">
                         <time>June 12, 2018</time>
                         <h2>Trevor Barrios</h2>
                         <h3>Practical Ethnographic Research for Product Development</h3>
@@ -146,7 +146,7 @@
                         <p>We covered how to yield a mass amount of user insights quickly and affordably with field research</p>
                         <!-- <a class="btn btn--ghost-red disabled" target="_blank" href="#">Recap Unavailable</a> -->
                       </li>
-                      <li class="c-presenters__card" style="display:none;">
+                      <li class="speaker-card hidden">
                         <time>May 8, 2018</time>
                         <h2>David Luna</h2>
                         <h3>Product Design</h3>
@@ -154,7 +154,7 @@
                         <p>He spoke about his journey into product design and gave insights on how to fight for user experience within our organizations.</p>
                         <!-- <a class="btn btn--ghost-red disabled" target="_blank" href="#">Recap Unavailable</a> -->
                       </li>
-                      <li class="c-presenters__card" style="display:none;">
+                      <li class="speaker-card hidden">
                         <time>April 10, 2018 <i class="far fa-film"></i></time>
                         <h2>Gary Hustwit</h2>
                         <h3><em>Objectified</em></h3>
@@ -164,7 +164,7 @@
                         <!-- <a class="btn btn--ghost-red disabled" target="_blank" href="#">Recap Unavailable</a> -->
                       </li>
 
-                      <li class="c-presenters__card" style="display:none;">
+                      <li class="speaker-card hidden">
                         <time>Mar 13, 2018 <i class="far fa-bolt"></i></time>
                         <h2>Josh Rich</h2>
                         <h3>Lorem Ipsum Can Burn In Hell</h3>
@@ -172,7 +172,7 @@
                         <p>How copy affects user experience and why designers shouldn’t use <em>lorem ipsum</em> when solving UX problems.</p>
                         <!-- <a class="btn btn--ghost-red" target="_blank" href="https://medium.com/tulsa-ux/march-meetup-recap-5fae10ef1a0b">View Recap</a> -->
                       </li>
-                      <li class="c-presenters__card" style="display:none;">
+                      <li class="speaker-card hidden">
                         <time>Mar 13, 2018 <i class="far fa-bolt"></i></time>
                         <h2>David Svezhintsev</h2>
                         <h3>Safari Can't Do UX</h3>
@@ -180,7 +180,7 @@
                         <p>iOS Safari has some technical limitations that prevent users from creating very basic and expected UX elements.</p>
                         <!-- <a class="btn btn--ghost-red" target="_blank" href="https://medium.com/tulsa-ux/march-meetup-recap-5fae10ef1a0b">View Recap</a> -->
                       </li>
-                      <li class="c-presenters__card" style="display:none;">
+                      <li class="speaker-card hidden">
                         <time>Feb 13, 2018</time>
                         <h2>Avery Wilson</h2>
                         <h3>The Future of UI within AR/VR</h3>
@@ -188,7 +188,7 @@
                         <p>Discussing different ways UI is being used in AR/VR technology and how to get started with new design systems.</p>
                         <!-- <a class="btn btn--ghost-red" target="_blank" href="https://medium.com/tulsa-ux/february-meetup-recap-f96cf1e76065">View Recap</a> -->
                       </li>
-                      <li class="c-presenters__card" style="display:none;">
+                      <li class="speaker-card hidden">
                         <time>Oct 10, 2017 <i class="far fa-bolt"></i></time>
                         <h2>Jake Brokaw</h2>
                         <h3>A Case for Design&nbsp;Systems</h3>
@@ -196,7 +196,7 @@
                         <p>A brief overview of how the Brand Design team at Formstack created and implemented their new design system.</p>
                         <!-- <a class="btn btn--ghost-red" target="_blank" href="https://medium.com/tulsa-ux/october-meeting-recap-46ecfc9c0082">View Recap</a> -->
                       </li>
-                      <li class="c-presenters__card" style="display:none;">
+                      <li class="speaker-card hidden">
                         <time>Oct 10, 2017 <i class="far fa-bolt"></i></time>
                         <h2>Hayden Marx</h2>
                         <h3> Keyboard Shortcuts and Your&nbsp;Website</h3>
@@ -204,7 +204,7 @@
                         <p>Hayden discussed best practices for increasing accessibility and assisting power users.</p>
                         <!-- <a class="btn btn--ghost-red" target="_blank" href="https://medium.com/tulsa-ux/october-meeting-recap-46ecfc9c0082">View Recap</a> -->
                       </li>
-                      <li class="c-presenters__card" style="display:none;">
+                      <li class="speaker-card hidden">
                         <time>Sept 12, 2017</time>
                         <h2>David Duncan</h2>
                         <h3>Designing for Data</h3>
@@ -212,7 +212,7 @@
                         <p>David presented on how best to display complex data and charts.</p>
                         <!-- <a class="btn btn--ghost-red" target="_blank" href="https://medium.com/tulsa-ux/september-meetup-recap-e0c2b68e58b1">View Recap</a> -->
                       </li>
-                      <li class="c-presenters__card" style="display:none;">
+                      <li class="speaker-card hidden">
                         <time>Aug 8, 2017</time>
                         <h2>Francis Djabri</h2>
                         <h3>Understanding Motivation</h3>
@@ -220,7 +220,7 @@
                         <p>Francis gave an overview of user motivations and user research techniques.</p>
                         <!-- <a class="btn btn--ghost-red" target="_blank" href="https://medium.com/tulsa-ux/august-meetup-recap-b98f4c030e6b">View Recap</a> -->
                       </li>
-                      <li class="c-presenters__card" style="display:none;">
+                      <li class="speaker-card hidden">
                         <time>July 11, 2017</time>
                         <h2>Maxx Crawford</h2>
                         <h3>Usability Heuristics</h3>
@@ -229,15 +229,15 @@
                         <!-- <a class="btn btn--ghost-red" target="_blank" href="https://medium.com/tulsa-ux/our-first-meeting-f8036d47b820">View Recap</a> -->
                       </li>
                     </ul>
-                    <div class="wrapper-cardBtn">
+                    <div class="pt-6 md:pt-0">
                       <a href="#" class="btn btn--red js-loadMore"> Load More &nbsp; <i class="fas fa-sync "></i></a>
                     </div>
                 </div>
             </div>
         </section>
         <section>
-            <div class="row">
-                <div class="col">
+            <div class="content-wrapper section-content">
+                <div>
                     <h2><i class="far fa-compass"></i> Mission</h2>
                     <p>
                         The Tulsa UX user group unites Tulsa’s user-experience practitioners in order to expand our skills and improve our community’s experience.
@@ -247,23 +247,23 @@
             </div>
         </section>
         <section>
-            <div class="row">
-                <div class="col">
+            <div class="content-wrapper section-content">
+                <div>
                     <h2><i class="far fa-fire-alt"></i> Sponsors</h2>
-                    <ul class="c-sponsors">
-                        <li class="c-sponsors__card">
-                            <div class="c-sponsors__card__logo"><img class="c-sponsors__card__logo--gitwit" src='assets/media/sponsor-gitwit-lockup.svg' alt="Gitwit logo" /></div>
+                    <ul class="md:grid md:grid-cols-3 md:gap-5 md:pr-2 md:pb-4">
+                        <li class="sponsor-card">
+                            <div class="mb-4 md:flex md:h-45 md:items-center"><img class="mx-auto w-54 brightness-28 dark:filter-none" src='/assets/media/sponsor-gitwit-lockup.svg' alt="Gitwit logo" /></div>
                             <a target="_blank" href="https://gitwit.com/">Gitwit</a>
                             <p>Event Space Sponsor</p>
 
                         </li>
-                        <li class="c-sponsors__card">
-                            <div class="c-sponsors__card__logo"><img src='assets/media/sponsor-techlahoma.png' alt="Techlahoma logo" /></div>
+                        <li class="sponsor-card">
+                            <div class="mb-4 md:flex md:h-45 md:items-center"><img class="dark:opacity-80 dark:grayscale dark:invert" src='/assets/media/sponsor-techlahoma.png' alt="Techlahoma logo" /></div>
                             <a target="_blank" href="https://www.techlahoma.org/">Techlahoma</a>
                             <p>Meetup Sponsor</p>
                         </li>
-                        <li class="c-sponsors__card">
-                            <div class="c-sponsors__card__logo"><img src='assets/media/sponsor-teksystems.png' alt="TEKsystems logo" /></div>
+                        <li class="sponsor-card">
+                            <div class="mb-4 md:flex md:h-45 md:items-center"><img class="dark:opacity-80 dark:grayscale dark:invert" src='/assets/media/sponsor-teksystems.png' alt="TEKsystems logo" /></div>
                             <a target="_blank" href="https://www.teksystems.com/">TEKsystems Digital</a>
                             <p>Founding Sponsor</p>
                         </li>
@@ -272,10 +272,10 @@
             </div>
         </section>
         <section>
-            <div class="row">
-                <div class="col">
+            <div class="content-wrapper section-content">
+                <div>
                     <h2><i class="fas fa-map-marker-question"></i> FAQs</h2>
-                    <ul class="faqs-list">
+                    <ul class="faq-list">
                         <li>
                             Do the events cost anything?
                             <span>No! They're free and open to the public.</span>
@@ -304,21 +304,21 @@
             </div>
         </section>
         <!-- <section>
-            <div class="row">
-                <div class="col">
+            <div class="content-wrapper section-content">
+                <div>
                     <h2>Get Involved</h2>
                 </div>
             </div>
         </section> -->
     </main>
-    <aside class="newsletter-signup" style="display: none;">
-        <div class="newsletter-signup__wrapper">
-            <div class="newsletter-signup__title">
-              <h2>Newsletter Signup</h2>
+    <aside class="newsletter-signup hidden bg-[#999] bg-[url(/assets/images/map-gray.svg)] bg-cover bg-fixed bg-top bg-no-repeat py-4 dark:bg-[#555]">
+        <div class="content-wrapper max-w-[1100px] min-[860px]:flex min-[860px]:items-center min-[860px]:justify-between min-[1100px]:px-0">
+            <div class="text-center min-[860px]:text-left">
+              <h2 class="mb-4 font-body leading-none min-[860px]:mb-0">Newsletter Signup</h2>
               <!-- <p>Get the latest updates on our meetings and everything else.</p> -->
             </div>
             <!-- Begin MailChimp Signup Form -->
-            <div id="mc_embed_signup" class="newsletter-signup__form">
+            <div id="mc_embed_signup" class="grow-2">
             	<form name="signup" method="POST" data-netlify="true"   >
             		<div id="mc_embed_signup_scroll">
             			<!-- <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> -->
@@ -326,7 +326,7 @@
             				<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
                             </label>
             				<input type="email" required value="" name="EMAIL" placeholder="name@example.com" class="required email" id="mce-EMAIL"><!--
-                            --><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn--red submit">
+                            --><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn--red newsletter-submit">
             			</div>
             			<div id="mce-responses" class="clear">
             				<div class="response" id="mce-error-response" style="display:none"></div>
@@ -339,12 +339,12 @@
             <!--End mc_embed_signup-->
         </div>
     </aside>
-    <footer>
-        <div class="c-footer__wrapper">
-            <div class="c-footer">
-                <div class="c-footer__links">
-                    <p>Black lives matter.</p>
-                    <ul class="c-footer__social">
+    <footer class="bg-charcoal px-4 py-6 font-heading text-[#737373]">
+        <div class="content-wrapper max-w-[1100px] max-[600px]:px-0">
+            <div class="min-[600px]:flex min-[600px]:items-center min-[600px]:justify-between">
+                <div class="text-center min-[600px]:text-left">
+                    <p class="mb-4">Black lives matter.</p>
+                    <ul class="social-links">
                       <li>
                         <a href="https://www.meetup.com/Tulsa-UX-User-Group/" target="_blank" title="Tulsa UX Meetup">
                           <i class="fab fa-meetup"></i>
@@ -387,8 +387,8 @@
                       </li>
                     </ul>
                 </div><!--
-                --><div class="c-footer__copyright">
-                    <a href="https://www.techlahoma.org/code-of-conduct/">Techlahoma Code of Conduct</a>
+                --><div class="mt-4 text-center min-[600px]:mt-0 min-[600px]:text-right">
+                    <a class="mb-2 block text-[#8c8c8c] hover:text-[#a6a6a6]" href="https://www.techlahoma.org/code-of-conduct/">Techlahoma Code of Conduct</a>
                     Copyright &copy; <script>document.write(new Date().getFullYear())</script> Tulsa UX. All&nbsp;Rights&nbsp;Reserved.
                 </div>
 
@@ -396,8 +396,8 @@
         </div>
     </footer>
 
-    <script src="assets/js/analytics.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="/assets/js/analytics.js"></script>
+    <script type="module" src="/assets/js/app.js"></script>
 </body>
 
 </html>

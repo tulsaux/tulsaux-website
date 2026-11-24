@@ -8,29 +8,19 @@ Website for TulsaUX.com
 
 ## Local development
 
-With Node.js 20.19 or 22.12 and newer, run:
+With Node.js 20.19+ or 22.12+, run:
 
 ```sh
 npm ci
 npm run dev
 ```
 
-Open http://localhost:5173. Vite reloads the page when HTML changes and updates the stylesheet in the browser when the compiled CSS changes.
+Open http://localhost:5173. Vite updates the page as you edit HTML, JavaScript, or Tailwind styles.
 
-## Compile SASS
+## Production build
 
-1. Make sure you have SASS installed.
+```sh
+npm run build
+```
 
-        $ sass -v
-
-2. If you don't, install it here: [http://sass-lang.com/install](http://sass-lang.com/install)
-
-3. Once installed, navigate to the CSS directory:
-
-        $ cd assets/css
-
-4. Run the following command to compile/watch the SCSS directory for changes.
-
-        $ sass --watch scss/style.scss:style.css
-
-Run the Sass watcher alongside `npm run dev` when editing SCSS.
+Vite writes the static site to `dist/`, which Netlify publishes. Edit event data in `public/assets/data/events.json`.
