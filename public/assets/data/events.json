@@ -243,6 +243,19 @@
       "url": "https://www.meetup.com/tulsa-ux-user-group/events/304064977",
       "description": "This month's meetup will be hands-on! We'll split into groups and create UI prototypes with provided grid paper. There will a prompt shared with different requirements and you'll work as a team to create an app.",
       "meetupType": "noSpeaker"
+    },
+    {
+      "date": "2027-01-14",
+      "month": "January",
+      "day": "14",
+      "meetupId": "317567870",
+      "time": "6–8 PM",
+      "location": "301 E Archer St., Tulsa, OK 74120",
+      "title": "Tulsa UX 2027 Reconnect Mixer",
+      "url": "https://www.meetup.com/tulsa-ux-user-group/events/317567870",
+      "lumaUrl": "https://luma.com/st927z33",
+      "description": "Join us in person for a casual mixer to catch up, meet fellow UX folks, and help shape future Tulsa UX meetups.",
+      "meetupType": "noSpeaker"
     }
   ]
 }

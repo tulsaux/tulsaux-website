@@ -59,7 +59,10 @@ function buildEventData(data) {
   const eventTemplate = document.querySelector(".js-event-template");
   const eventTemplateSpeakerTitle = eventTemplate.querySelector(".js-data-speaker-title");
   const eventTemplateDate = eventTemplate.querySelector(".js-data-date");
+  const eventTemplateTime = eventTemplate.querySelector(".js-data-time");
+  const eventTemplateLocation = eventTemplate.querySelector(".js-data-location");
   const eventTemplateLink = eventTemplate.querySelector(".js-data-link");
+  const eventTemplateLumaLink = eventTemplate.querySelector(".js-data-luma-link");
   const currentDate = getCurrentDate();
 
   for (const event of data) {
@@ -71,10 +74,8 @@ function buildEventData(data) {
       if (event.meetupType == "lightning") {
         // console.log("lightning")
         speakerCopy = `This meetup is Tulsa UX's ${event.title} semiannual lightning talks. ${event.description}`;
-      } else if (event.meetupType == "noSpeaker" && event.title && event.description) {
-        speakerCopy = `${event.title}: ${event.description}` 
-      } else if (event.meetupType == "noSpeaker" && !event.title) {
-        speakerCopy = event.description; 
+      } else if (event.meetupType == "noSpeaker") {
+        speakerCopy = [event.title, event.description].filter(Boolean).join(": ");
       } else if (event.title && event.description) {
         speakerCopy += "Their talk, “"  + event.title + "” will cover " + event.description;
       } else if ( event.title && !event.description ) {
@@ -96,8 +97,26 @@ function buildEventData(data) {
         eventTemplateSpeakerTitle.appendChild(speakerSignUpLink);
       }
 
-      eventTemplateDate.textContent = event.month + " " + event.day;
-      eventTemplateLink.href = event.url;
+      const weekday = new Date(event.date).toLocaleDateString("en-US", {
+        weekday: "long",
+        timeZone: "UTC",
+      });
+      eventTemplateDate.dateTime = event.date;
+      eventTemplateDate.textContent = `${weekday}, ${event.month} ${event.day}`;
+      eventTemplateTime.textContent = event.time ? ` · ${event.time}` : "";
+      eventTemplateLocation.textContent = event.location ?? "";
+      if (event.url) {
+        eventTemplateLink.href = event.url;
+        if (event.lumaUrl) {
+          eventTemplateLink.querySelector(".js-data-link-label").textContent = "RSVP on Meetup";
+          eventTemplateLink.classList.replace("btn--red", "btn--ghost-red");
+        }
+        eventTemplateLink.classList.remove("hidden");
+      }
+      if (event.lumaUrl) {
+        eventTemplateLumaLink.href = event.lumaUrl;
+        eventTemplateLumaLink.classList.remove("hidden");
+      }
       
       eventTemplate.classList.remove("hidden");
       return;
