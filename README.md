@@ -24,3 +24,7 @@ npm run build
 ```
 
 Vite writes the static site to `dist/`, which Netlify publishes. Edit event data in `public/assets/data/events.json`.
+
+## Tests
+
+Run `npm test` to build the site and check its bundled CSS and JavaScript, local assets, event data, and Netlify deployment files. GitHub Actions runs the same checks on pull requests and pushes to `main`.
